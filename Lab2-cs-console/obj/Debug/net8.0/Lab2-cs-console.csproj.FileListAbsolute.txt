@@ -1,0 +1,14 @@
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\bin\Debug\net8.0\Lab2-cs-console.exe
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\bin\Debug\net8.0\Lab2-cs-console.deps.json
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\bin\Debug\net8.0\Lab2-cs-console.runtimeconfig.json
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\bin\Debug\net8.0\Lab2-cs-console.dll
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\bin\Debug\net8.0\Lab2-cs-console.pdb
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\obj\Debug\net8.0\Lab2-cs-console.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\obj\Debug\net8.0\Lab2-cs-console.AssemblyInfoInputs.cache
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\obj\Debug\net8.0\Lab2-cs-console.AssemblyInfo.cs
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\obj\Debug\net8.0\Lab2-cs-console.csproj.CoreCompileInputs.cache
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\obj\Debug\net8.0\Lab2-cs-console.dll
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\obj\Debug\net8.0\refint\Lab2-cs-console.dll
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\obj\Debug\net8.0\Lab2-cs-console.pdb
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\obj\Debug\net8.0\Lab2-cs-console.genruntimeconfig.cache
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\obj\Debug\net8.0\ref\Lab2-cs-console.dll
