@@ -1,0 +1,11 @@
+D:\Study\Subjects\Sem4\TechProg\Lab5\bin\Debug\Lab5.exe.config
+D:\Study\Subjects\Sem4\TechProg\Lab5\bin\Debug\Lab5.exe
+D:\Study\Subjects\Sem4\TechProg\Lab5\bin\Debug\Lab5.pdb
+D:\Study\Subjects\Sem4\TechProg\Lab5\obj\Debug\Lab5.csproj.AssemblyReference.cache
+D:\Study\Subjects\Sem4\TechProg\Lab5\obj\Debug\Lab5.Form1.resources
+D:\Study\Subjects\Sem4\TechProg\Lab5\obj\Debug\Lab5.Properties.Resources.resources
+D:\Study\Subjects\Sem4\TechProg\Lab5\obj\Debug\Lab5.csproj.GenerateResource.cache
+D:\Study\Subjects\Sem4\TechProg\Lab5\obj\Debug\Lab5.csproj.CoreCompileInputs.cache
+D:\Study\Subjects\Sem4\TechProg\Lab5\obj\Debug\Lab5.exe
+D:\Study\Subjects\Sem4\TechProg\Lab5\obj\Debug\Lab5.pdb
+D:\Study\Subjects\Sem4\TechProg\Lab5\obj\Debug\Lab5.Modules.InputBoxForm.resources
