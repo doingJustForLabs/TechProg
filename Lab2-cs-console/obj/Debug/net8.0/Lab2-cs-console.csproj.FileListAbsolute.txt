@@ -12,3 +12,4 @@ D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\obj\Debug\net8.0\refint\Lab2-cs-
 D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\obj\Debug\net8.0\Lab2-cs-console.pdb
 D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\obj\Debug\net8.0\Lab2-cs-console.genruntimeconfig.cache
 D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\obj\Debug\net8.0\ref\Lab2-cs-console.dll
+D:\Study\Subjects\Sem4\TechProg\Lab2-cs-console\obj\Debug\net8.0\Lab2-cs-console.sourcelink.json
