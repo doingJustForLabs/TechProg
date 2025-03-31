@@ -1,0 +1,10 @@
+D:\holn\Desktop\Учеба\technology\lab3_c_charp\lab3_c_charp\bin\Debug\lab3_c_charp.exe.config
+D:\holn\Desktop\Учеба\technology\lab3_c_charp\lab3_c_charp\bin\Debug\lab3_c_charp.exe
+D:\holn\Desktop\Учеба\technology\lab3_c_charp\lab3_c_charp\bin\Debug\lab3_c_charp.pdb
+D:\holn\Desktop\Учеба\technology\lab3_c_charp\lab3_c_charp\obj\Debug\lab3_c_charp.csproj.AssemblyReference.cache
+D:\holn\Desktop\Учеба\technology\lab3_c_charp\lab3_c_charp\obj\Debug\lab3_c_charp.Form1.resources
+D:\holn\Desktop\Учеба\technology\lab3_c_charp\lab3_c_charp\obj\Debug\lab3_c_charp.Properties.Resources.resources
+D:\holn\Desktop\Учеба\technology\lab3_c_charp\lab3_c_charp\obj\Debug\lab3_c_charp.csproj.GenerateResource.cache
+D:\holn\Desktop\Учеба\technology\lab3_c_charp\lab3_c_charp\obj\Debug\lab3_c_charp.csproj.CoreCompileInputs.cache
+D:\holn\Desktop\Учеба\technology\lab3_c_charp\lab3_c_charp\obj\Debug\lab3_c_charp.exe
+D:\holn\Desktop\Учеба\technology\lab3_c_charp\lab3_c_charp\obj\Debug\lab3_c_charp.pdb

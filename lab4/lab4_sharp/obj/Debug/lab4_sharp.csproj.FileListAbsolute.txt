@@ -1,0 +1,10 @@
+D:\holn\Desktop\Учеба\technology\lab4_sharp\lab4_sharp\bin\Debug\lab4_sharp.exe.config
+D:\holn\Desktop\Учеба\technology\lab4_sharp\lab4_sharp\bin\Debug\lab4_sharp.exe
+D:\holn\Desktop\Учеба\technology\lab4_sharp\lab4_sharp\bin\Debug\lab4_sharp.pdb
+D:\holn\Desktop\Учеба\technology\lab4_sharp\lab4_sharp\obj\Debug\lab4_sharp.csproj.AssemblyReference.cache
+D:\holn\Desktop\Учеба\technology\lab4_sharp\lab4_sharp\obj\Debug\lab4_sharp.Form1.resources
+D:\holn\Desktop\Учеба\technology\lab4_sharp\lab4_sharp\obj\Debug\lab4_sharp.Properties.Resources.resources
+D:\holn\Desktop\Учеба\technology\lab4_sharp\lab4_sharp\obj\Debug\lab4_sharp.csproj.GenerateResource.cache
+D:\holn\Desktop\Учеба\technology\lab4_sharp\lab4_sharp\obj\Debug\lab4_sharp.csproj.CoreCompileInputs.cache
+D:\holn\Desktop\Учеба\technology\lab4_sharp\lab4_sharp\obj\Debug\lab4_sharp.exe
+D:\holn\Desktop\Учеба\technology\lab4_sharp\lab4_sharp\obj\Debug\lab4_sharp.pdb

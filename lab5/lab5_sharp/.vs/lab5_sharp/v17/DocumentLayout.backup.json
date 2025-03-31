@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5_sharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC1BEA3-91AF-4982-A974-CE67276FF1EB}|lab5_sharp\\lab5_sharp.csproj|d:\\holn\\desktop\\\u0443\u0447\u0435\u0431\u0430\\technology\\lab5_sharp\\lab5_sharp\\checkdecimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC1BEA3-91AF-4982-A974-CE67276FF1EB}|lab5_sharp\\lab5_sharp.csproj|solutionrelative:lab5_sharp\\checkdecimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC1BEA3-91AF-4982-A974-CE67276FF1EB}|lab5_sharp\\lab5_sharp.csproj|d:\\holn\\desktop\\\u0443\u0447\u0435\u0431\u0430\\technology\\lab5_sharp\\lab5_sharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC1BEA3-91AF-4982-A974-CE67276FF1EB}|lab5_sharp\\lab5_sharp.csproj|solutionrelative:lab5_sharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC1BEA3-91AF-4982-A974-CE67276FF1EB}|lab5_sharp\\lab5_sharp.csproj|d:\\holn\\desktop\\\u0443\u0447\u0435\u0431\u0430\\technology\\lab5_sharp\\lab5_sharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CC1BEA3-91AF-4982-A974-CE67276FF1EB}|lab5_sharp\\lab5_sharp.csproj|solutionrelative:lab5_sharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC1BEA3-91AF-4982-A974-CE67276FF1EB}|lab5_sharp\\lab5_sharp.csproj|d:\\holn\\desktop\\\u0443\u0447\u0435\u0431\u0430\\technology\\lab5_sharp\\lab5_sharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC1BEA3-91AF-4982-A974-CE67276FF1EB}|lab5_sharp\\lab5_sharp.csproj|solutionrelative:lab5_sharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5_sharp\\lab5_sharp\\Program.cs",
+              "RelativeDocumentMoniker": "lab5_sharp\\Program.cs",
+              "ToolTip": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5_sharp\\lab5_sharp\\Program.cs",
+              "RelativeToolTip": "lab5_sharp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T12:40:19.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CheckDecimal.cs",
+              "DocumentMoniker": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5_sharp\\lab5_sharp\\CheckDecimal.cs",
+              "RelativeDocumentMoniker": "lab5_sharp\\CheckDecimal.cs",
+              "ToolTip": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5_sharp\\lab5_sharp\\CheckDecimal.cs",
+              "RelativeToolTip": "lab5_sharp\\CheckDecimal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T11:47:49.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5_sharp\\lab5_sharp\\Form1.cs",
+              "RelativeDocumentMoniker": "lab5_sharp\\Form1.cs",
+              "ToolTip": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5_sharp\\lab5_sharp\\Form1.cs",
+              "RelativeToolTip": "lab5_sharp\\Form1.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T10:01:14.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5_sharp\\lab5_sharp\\Form1.cs",
+              "RelativeDocumentMoniker": "lab5_sharp\\Form1.cs",
+              "ToolTip": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5_sharp\\lab5_sharp\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "lab5_sharp\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T10:01:05.412Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+D:\holn\Desktop\Учеба\technology\lab5_sharp\lab5_sharp\bin\Debug\lab5_sharp.exe.config
+D:\holn\Desktop\Учеба\technology\lab5_sharp\lab5_sharp\bin\Debug\lab5_sharp.exe
+D:\holn\Desktop\Учеба\technology\lab5_sharp\lab5_sharp\bin\Debug\lab5_sharp.pdb
+D:\holn\Desktop\Учеба\technology\lab5_sharp\lab5_sharp\obj\Debug\lab5_sharp.csproj.AssemblyReference.cache
+D:\holn\Desktop\Учеба\technology\lab5_sharp\lab5_sharp\obj\Debug\lab5_sharp.Form1.resources
+D:\holn\Desktop\Учеба\technology\lab5_sharp\lab5_sharp\obj\Debug\lab5_sharp.InputBoxForm.resources
+D:\holn\Desktop\Учеба\technology\lab5_sharp\lab5_sharp\obj\Debug\lab5_sharp.Properties.Resources.resources
+D:\holn\Desktop\Учеба\technology\lab5_sharp\lab5_sharp\obj\Debug\lab5_sharp.csproj.GenerateResource.cache
+D:\holn\Desktop\Учеба\technology\lab5_sharp\lab5_sharp\obj\Debug\lab5_sharp.csproj.CoreCompileInputs.cache
+D:\holn\Desktop\Учеба\technology\lab5_sharp\lab5_sharp\obj\Debug\lab5_sharp.exe
+D:\holn\Desktop\Учеба\technology\lab5_sharp\lab5_sharp\obj\Debug\lab5_sharp.pdb
+D:\holn\Desktop\Учеба\technology\lab5_sharp\lab5_sharp\obj\Debug\lab5_sharp.csproj.ResolveComReference.cache
