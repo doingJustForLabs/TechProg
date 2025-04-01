@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace Lab4
 {
-    public partial class Form1: Form
+    public partial class Form1 : Form
     {
+        public List<string> initialFolders = new List<string>();
+
         public Form1()
         {
             InitializeComponent();
@@ -20,27 +19,10 @@ namespace Lab4
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            folderBrowserDialog1.ShowDialog();
-            pathTextBox.Text = "";
-            pathTextBox.ForeColor = Color.Black;
-            pathTextBox.Text = folderBrowserDialog1.SelectedPath;
-        }
-
-        private void showButton_Click(object sender, EventArgs e)
-        {
-            string rootDir = pathTextBox.Text;
-
-            if (!Directory.Exists(rootDir))
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
-                MessageBox.Show("Такого пути не существует");
-                return;
-            }
-
-            logTextBox.Text = $"Папка: {rootDir}\n\n";
-
-            foreach (var dir in Directory.EnumerateDirectories(rootDir, "*", SearchOption.AllDirectories))
-            {
-                logTextBox.Text += $"{dir}\n";
+                pathTextBox.Text = folderBrowserDialog1.SelectedPath;
+                pathTextBox.ForeColor = Color.Black;
             }
         }
 
@@ -53,10 +35,11 @@ namespace Lab4
             }
         }
 
-        private void clearButton_Click(object sender, EventArgs e)
-        {
-            logTextBox.Text = "";
-        }
+        //private void clearButton_Click(object sender, EventArgs e)
+        //{
+        //    tabPageAfter.Controls.Clear();
+        //    tabPageBefore.Controls.Clear();
+        //}
 
         private void runButton_Click(object sender, EventArgs e)
         {
@@ -64,37 +47,60 @@ namespace Lab4
 
             if (!Directory.Exists(rootDir))
             {
-                MessageBox.Show("Такого пути не существует");
+                MessageBox.Show("Такого пути не существует", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            logTextBox.Text = $"Папка: {rootDir}\n\n";
+            initialFolders = Directory.GetDirectories(rootDir, "*", SearchOption.AllDirectories).ToList();
 
-            int task1 = findFilesWithNums(rootDir);
+            DisplayFolders(tabPageBefore, initialFolders);
 
-            logTextBox.Text += $"Задание 1. Папок с числом в названии: {task1}";
-        }
-
-        private void stopButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        public int findFilesWithNums(string dirPath)
-        {
-            string rootDir = pathTextBox.Text;
-            int countFiles = 0;
-
-            foreach (var dir in Directory.EnumerateDirectories(rootDir, "*", SearchOption.AllDirectories))
+            using (var progressForm = new TaskProgress(rootDir))
             {
-                string folderName = new DirectoryInfo(dir).Name;
-
-                if (folderName.Any(char.IsDigit))
-                {
-                    countFiles += 1;
+                if (progressForm.ShowDialog() == DialogResult.OK)
+                { 
+                    DisplayFolders(tabPageAfter, progressForm.UpdatedFolders, initialFolders);
+                    tabControl1.SelectedTab = tabPageAfter;
                 }
             }
-            return countFiles;
+        }
+
+        private void DisplayFolders(TabPage tabPage, List<string> folders, List<string> oldFolders = null)
+        {
+            tabPage.Controls.Clear();
+
+            RichTextBox rtb = new RichTextBox
+            {
+                Dock = DockStyle.Fill,
+                ReadOnly = true,
+            };
+
+            foreach (var folder in folders)
+            {
+                string displayName = folder;
+
+                // Подсвечиваем если:
+                // 1. Это первая или последняя папка (они поменялись местами)
+                // 2. Или если папки не было в oldFolders
+
+                bool isSwapped = (folders.IndexOf(folder) == 0 ||
+                                (folders.IndexOf(folder) == folders.Count - 1));
+
+                if ((oldFolders != null && isSwapped) ||
+                    (oldFolders != null && !oldFolders.Contains(folder)))
+                {
+                    rtb.SelectionColor = Color.Green;
+                }
+                else
+                {
+                    rtb.SelectionColor = rtb.ForeColor;
+                }
+
+                rtb.AppendText(displayName + Environment.NewLine);
+                rtb.SelectionColor = rtb.ForeColor;
+            }
+
+            tabPage.Controls.Add(rtb);
         }
     }
 }

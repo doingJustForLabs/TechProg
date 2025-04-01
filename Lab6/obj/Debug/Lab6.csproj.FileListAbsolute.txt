@@ -8,4 +8,3 @@ D:\Study\Subjects\Sem4\TechProg\Lab6\obj\Debug\Lab6.csproj.GenerateResource.cach
 D:\Study\Subjects\Sem4\TechProg\Lab6\obj\Debug\Lab6.csproj.CoreCompileInputs.cache
 D:\Study\Subjects\Sem4\TechProg\Lab6\obj\Debug\Lab6.exe
 D:\Study\Subjects\Sem4\TechProg\Lab6\obj\Debug\Lab6.pdb
-D:\Study\Subjects\Sem4\TechProg\Lab6\obj\Debug\Lab6.Test.resources

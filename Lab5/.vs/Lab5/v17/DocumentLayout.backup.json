@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E3EF6E3-3013-4BC7-821F-97A74B93C391}|Lab5.csproj|D:\\Study\\Subjects\\Sem4\\TechProg\\Lab5\\inputboxform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E3EF6E3-3013-4BC7-821F-97A74B93C391}|Lab5.csproj|d:\\study\\subjects\\sem4\\techprog\\lab5\\inputboxform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E3EF6E3-3013-4BC7-821F-97A74B93C391}|Lab5.csproj|solutionrelative:inputboxform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E3EF6E3-3013-4BC7-821F-97A74B93C391}|Lab5.csproj|d:\\study\\subjects\\sem4\\techprog\\lab5\\inputboxform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3E3EF6E3-3013-4BC7-821F-97A74B93C391}|Lab5.csproj|D:\\Study\\Subjects\\Sem4\\TechProg\\Lab5\\inputboxform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3E3EF6E3-3013-4BC7-821F-97A74B93C391}|Lab5.csproj|solutionrelative:inputboxform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -27,14 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InputBoxForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Title": "InputBoxForm.cs [Design]",
               "DocumentMoniker": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab5\\InputBoxForm.cs",
               "RelativeDocumentMoniker": "InputBoxForm.cs",
-              "ToolTip": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab5\\InputBoxForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "InputBoxForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab5\\InputBoxForm.cs [Design]",
+              "RelativeToolTip": "InputBoxForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T12:17:22.377Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "InputBoxForm.cs",
               "ToolTip": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab5\\InputBoxForm.cs",
               "RelativeToolTip": "InputBoxForm.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAIwCgAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T11:38:59.797Z",
               "EditorCaption": ""

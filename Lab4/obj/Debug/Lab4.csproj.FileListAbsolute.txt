@@ -8,3 +8,4 @@ D:\Study\Subjects\Sem4\TechProg\Lab4\obj\Debug\Lab4.csproj.GenerateResource.cach
 D:\Study\Subjects\Sem4\TechProg\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
 D:\Study\Subjects\Sem4\TechProg\Lab4\obj\Debug\Lab4.exe
 D:\Study\Subjects\Sem4\TechProg\Lab4\obj\Debug\Lab4.pdb
+D:\Study\Subjects\Sem4\TechProg\Lab4\obj\Debug\Lab4.TaskProgress.resources

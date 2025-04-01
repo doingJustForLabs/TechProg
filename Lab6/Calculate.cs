@@ -12,6 +12,5 @@ namespace Lab6.Modules
         {
             return x / (y - 2);
         }
-
     }
 }
