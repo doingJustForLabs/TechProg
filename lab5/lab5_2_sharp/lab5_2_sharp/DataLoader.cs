@@ -41,7 +41,7 @@ namespace lab5_2_sharp
 
                 if (tableStart == -1) throw new Exception("Не найдена строка с заголовком таблицы (y\\x)");
 
-                var xHeaders = lines[tableStart].Split(new[] { '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                var xHeaders = lines[tableStart].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 var xValues = new double[xHeaders.Length - 1];
                 for (int i = 1; i < xHeaders.Length; i++)
                 {
@@ -56,7 +56,7 @@ namespace lab5_2_sharp
 
                 for (int i = tableStart + 1; i < lines.Length; i++)
                 {
-                    var parts = lines[i].Split(new[] { '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                    var parts = lines[i].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                     if (parts.Length < 2) continue;
 
                     if (!double.TryParse(parts[0].Trim(), NumberStyles.Any, _culture, out double yValue))
@@ -116,6 +116,7 @@ namespace lab5_2_sharp
                     array[i, j] = list[i][j];
                 }
             }
+
 
             return array;
         }

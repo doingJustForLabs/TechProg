@@ -107,16 +107,31 @@ namespace lab5_2_sharp
             content.AppendLine($"Количество точек для Y: {result.YValues.Count}");
             content.AppendLine();
 
-            content.Append("y\\x\t");
-            foreach (var x in result.XValues) content.Append($"{x}\t");
+            const int yColWidth = 10;
+            const int xColWidth = 30;
+            const int valueColWidth = 30;
+
+            content.Append("y\\x".PadRight(yColWidth));
+            foreach (var x in result.XValues)
+            {
+                content.Append(x.ToString("0.###############").PadLeft(xColWidth));
+            }
             content.AppendLine();
+
+
 
             for (int i = 0; i < result.YValues.Count; i++)
             {
-                content.Append($"{result.YValues[i]}\t");
+                content.Append(result.YValues[i].ToString("0.####").PadRight(yColWidth));
+
+                // Значения функции
                 for (int j = 0; j < result.XValues.Count; j++)
                 {
-                    content.Append(double.IsNaN(result.Results[i, j]) ? "NaN\t" : $"{result.Results[i, j]}\t");
+                    string value = double.IsNaN(result.Results[i, j])
+                        ? "NaN".PadLeft(valueColWidth)
+                        : result.Results[i, j].ToString("0.###############").PadLeft(valueColWidth);
+
+                    content.Append(value);
                 }
                 content.AppendLine();
             }

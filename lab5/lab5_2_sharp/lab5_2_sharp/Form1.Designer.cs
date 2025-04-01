@@ -40,20 +40,21 @@
             this.listBoxFiles = new System.Windows.Forms.ListBox();
             this.timerFilesUpdate = new System.Windows.Forms.Timer(this.components);
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBoxX0 = new System.Windows.Forms.TextBox();
-            this.textBoxXk = new System.Windows.Forms.TextBox();
-            this.textBoxStepX = new System.Windows.Forms.TextBox();
-            this.textBoxY0 = new System.Windows.Forms.TextBox();
-            this.textBoxNy = new System.Windows.Forms.TextBox();
-            this.textBoxStepY = new System.Windows.Forms.TextBox();
-            this.labelX0 = new System.Windows.Forms.Label();
-            this.labelXk = new System.Windows.Forms.Label();
-            this.labelHX = new System.Windows.Forms.Label();
-            this.labelY0 = new System.Windows.Forms.Label();
-            this.labelNy = new System.Windows.Forms.Label();
             this.labelHY = new System.Windows.Forms.Label();
+            this.labelNy = new System.Windows.Forms.Label();
+            this.labelY0 = new System.Windows.Forms.Label();
+            this.labelHX = new System.Windows.Forms.Label();
+            this.labelXk = new System.Windows.Forms.Label();
+            this.labelX0 = new System.Windows.Forms.Label();
+            this.textBoxStepY = new System.Windows.Forms.TextBox();
+            this.textBoxNy = new System.Windows.Forms.TextBox();
+            this.textBoxY0 = new System.Windows.Forms.TextBox();
+            this.textBoxStepX = new System.Windows.Forms.TextBox();
+            this.textBoxXk = new System.Windows.Forms.TextBox();
+            this.textBoxX0 = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.btnGenerate = new System.Windows.Forms.Button();
+            this.btnValidate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFiles)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -62,7 +63,7 @@
             // buttonCalc
             // 
             this.buttonCalc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonCalc.Location = new System.Drawing.Point(90, 387);
+            this.buttonCalc.Location = new System.Drawing.Point(36, 387);
             this.buttonCalc.Name = "buttonCalc";
             this.buttonCalc.Size = new System.Drawing.Size(121, 35);
             this.buttonCalc.TabIndex = 1;
@@ -73,7 +74,7 @@
             // buttonCancel
             // 
             this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonCancel.Location = new System.Drawing.Point(324, 387);
+            this.buttonCancel.Location = new System.Drawing.Point(350, 387);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(121, 35);
             this.buttonCancel.TabIndex = 2;
@@ -84,7 +85,7 @@
             // btnShowPoints
             // 
             this.btnShowPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnShowPoints.Location = new System.Drawing.Point(532, 387);
+            this.btnShowPoints.Location = new System.Drawing.Point(494, 352);
             this.btnShowPoints.Name = "btnShowPoints";
             this.btnShowPoints.Size = new System.Drawing.Size(121, 35);
             this.btnShowPoints.TabIndex = 3;
@@ -124,6 +125,7 @@
             // 
             // dataGridViewFiles
             // 
+            this.dataGridViewFiles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewFiles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFiles.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridViewFiles.Location = new System.Drawing.Point(0, 455);
@@ -135,7 +137,7 @@
             // buttonLoadData
             // 
             this.buttonLoadData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonLoadData.Location = new System.Drawing.Point(1007, 387);
+            this.buttonLoadData.Location = new System.Drawing.Point(986, 377);
             this.buttonLoadData.Name = "buttonLoadData";
             this.buttonLoadData.Size = new System.Drawing.Size(191, 45);
             this.buttonLoadData.TabIndex = 8;
@@ -179,93 +181,15 @@
             this.tabPage1.Text = "1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBoxX0
+            // labelHY
             // 
-            this.textBoxX0.Location = new System.Drawing.Point(87, 25);
-            this.textBoxX0.Name = "textBoxX0";
-            this.textBoxX0.Size = new System.Drawing.Size(86, 20);
-            this.textBoxX0.TabIndex = 0;
-            this.textBoxX0.Text = "-10";
-            // 
-            // textBoxXk
-            // 
-            this.textBoxXk.Location = new System.Drawing.Point(87, 89);
-            this.textBoxXk.Name = "textBoxXk";
-            this.textBoxXk.Size = new System.Drawing.Size(86, 20);
-            this.textBoxXk.TabIndex = 1;
-            this.textBoxXk.Text = "10";
-            // 
-            // textBoxStepX
-            // 
-            this.textBoxStepX.Location = new System.Drawing.Point(87, 162);
-            this.textBoxStepX.Name = "textBoxStepX";
-            this.textBoxStepX.Size = new System.Drawing.Size(86, 20);
-            this.textBoxStepX.TabIndex = 2;
-            this.textBoxStepX.Text = "1";
-            // 
-            // textBoxY0
-            // 
-            this.textBoxY0.Location = new System.Drawing.Point(274, 25);
-            this.textBoxY0.Name = "textBoxY0";
-            this.textBoxY0.Size = new System.Drawing.Size(86, 20);
-            this.textBoxY0.TabIndex = 3;
-            this.textBoxY0.Text = "-10";
-            // 
-            // textBoxNy
-            // 
-            this.textBoxNy.Location = new System.Drawing.Point(274, 89);
-            this.textBoxNy.Name = "textBoxNy";
-            this.textBoxNy.Size = new System.Drawing.Size(86, 20);
-            this.textBoxNy.TabIndex = 4;
-            this.textBoxNy.Text = "10";
-            // 
-            // textBoxStepY
-            // 
-            this.textBoxStepY.Location = new System.Drawing.Point(274, 162);
-            this.textBoxStepY.Name = "textBoxStepY";
-            this.textBoxStepY.Size = new System.Drawing.Size(86, 20);
-            this.textBoxStepY.TabIndex = 5;
-            this.textBoxStepY.Text = "1";
-            // 
-            // labelX0
-            // 
-            this.labelX0.AutoSize = true;
-            this.labelX0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelX0.Location = new System.Drawing.Point(17, 25);
-            this.labelX0.Name = "labelX0";
-            this.labelX0.Size = new System.Drawing.Size(29, 20);
-            this.labelX0.TabIndex = 6;
-            this.labelX0.Text = "X0";
-            // 
-            // labelXk
-            // 
-            this.labelXk.AutoSize = true;
-            this.labelXk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelXk.Location = new System.Drawing.Point(17, 89);
-            this.labelXk.Name = "labelXk";
-            this.labelXk.Size = new System.Drawing.Size(28, 20);
-            this.labelXk.TabIndex = 7;
-            this.labelXk.Text = "Xk";
-            // 
-            // labelHX
-            // 
-            this.labelHX.AutoSize = true;
-            this.labelHX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelHX.Location = new System.Drawing.Point(17, 162);
-            this.labelHX.Name = "labelHX";
-            this.labelHX.Size = new System.Drawing.Size(53, 20);
-            this.labelHX.TabIndex = 8;
-            this.labelHX.Text = "Шаг X";
-            // 
-            // labelY0
-            // 
-            this.labelY0.AutoSize = true;
-            this.labelY0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelY0.Location = new System.Drawing.Point(217, 25);
-            this.labelY0.Name = "labelY0";
-            this.labelY0.Size = new System.Drawing.Size(29, 20);
-            this.labelY0.TabIndex = 9;
-            this.labelY0.Text = "Y0";
+            this.labelHY.AutoSize = true;
+            this.labelHY.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelHY.Location = new System.Drawing.Point(193, 162);
+            this.labelHY.Name = "labelHY";
+            this.labelHY.Size = new System.Drawing.Size(53, 20);
+            this.labelHY.TabIndex = 11;
+            this.labelHY.Text = "Шаг Y";
             // 
             // labelNy
             // 
@@ -277,15 +201,93 @@
             this.labelNy.TabIndex = 10;
             this.labelNy.Text = "Ny";
             // 
-            // labelHY
+            // labelY0
             // 
-            this.labelHY.AutoSize = true;
-            this.labelHY.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelHY.Location = new System.Drawing.Point(193, 162);
-            this.labelHY.Name = "labelHY";
-            this.labelHY.Size = new System.Drawing.Size(53, 20);
-            this.labelHY.TabIndex = 11;
-            this.labelHY.Text = "Шаг Y";
+            this.labelY0.AutoSize = true;
+            this.labelY0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelY0.Location = new System.Drawing.Point(217, 25);
+            this.labelY0.Name = "labelY0";
+            this.labelY0.Size = new System.Drawing.Size(29, 20);
+            this.labelY0.TabIndex = 9;
+            this.labelY0.Text = "Y0";
+            // 
+            // labelHX
+            // 
+            this.labelHX.AutoSize = true;
+            this.labelHX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelHX.Location = new System.Drawing.Point(17, 162);
+            this.labelHX.Name = "labelHX";
+            this.labelHX.Size = new System.Drawing.Size(53, 20);
+            this.labelHX.TabIndex = 8;
+            this.labelHX.Text = "Шаг X";
+            // 
+            // labelXk
+            // 
+            this.labelXk.AutoSize = true;
+            this.labelXk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelXk.Location = new System.Drawing.Point(17, 89);
+            this.labelXk.Name = "labelXk";
+            this.labelXk.Size = new System.Drawing.Size(28, 20);
+            this.labelXk.TabIndex = 7;
+            this.labelXk.Text = "Xk";
+            // 
+            // labelX0
+            // 
+            this.labelX0.AutoSize = true;
+            this.labelX0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelX0.Location = new System.Drawing.Point(17, 25);
+            this.labelX0.Name = "labelX0";
+            this.labelX0.Size = new System.Drawing.Size(29, 20);
+            this.labelX0.TabIndex = 6;
+            this.labelX0.Text = "X0";
+            // 
+            // textBoxStepY
+            // 
+            this.textBoxStepY.Location = new System.Drawing.Point(274, 162);
+            this.textBoxStepY.Name = "textBoxStepY";
+            this.textBoxStepY.Size = new System.Drawing.Size(86, 20);
+            this.textBoxStepY.TabIndex = 5;
+            this.textBoxStepY.Text = "1";
+            // 
+            // textBoxNy
+            // 
+            this.textBoxNy.Location = new System.Drawing.Point(274, 89);
+            this.textBoxNy.Name = "textBoxNy";
+            this.textBoxNy.Size = new System.Drawing.Size(86, 20);
+            this.textBoxNy.TabIndex = 4;
+            this.textBoxNy.Text = "10";
+            // 
+            // textBoxY0
+            // 
+            this.textBoxY0.Location = new System.Drawing.Point(274, 25);
+            this.textBoxY0.Name = "textBoxY0";
+            this.textBoxY0.Size = new System.Drawing.Size(86, 20);
+            this.textBoxY0.TabIndex = 3;
+            this.textBoxY0.Text = "-10";
+            // 
+            // textBoxStepX
+            // 
+            this.textBoxStepX.Location = new System.Drawing.Point(87, 162);
+            this.textBoxStepX.Name = "textBoxStepX";
+            this.textBoxStepX.Size = new System.Drawing.Size(86, 20);
+            this.textBoxStepX.TabIndex = 2;
+            this.textBoxStepX.Text = "1";
+            // 
+            // textBoxXk
+            // 
+            this.textBoxXk.Location = new System.Drawing.Point(87, 89);
+            this.textBoxXk.Name = "textBoxXk";
+            this.textBoxXk.Size = new System.Drawing.Size(86, 20);
+            this.textBoxXk.TabIndex = 1;
+            this.textBoxXk.Text = "10";
+            // 
+            // textBoxX0
+            // 
+            this.textBoxX0.Location = new System.Drawing.Point(87, 25);
+            this.textBoxX0.Name = "textBoxX0";
+            this.textBoxX0.Size = new System.Drawing.Size(86, 20);
+            this.textBoxX0.TabIndex = 0;
+            this.textBoxX0.Text = "-10";
             // 
             // tabControl1
             // 
@@ -301,7 +303,7 @@
             // btnGenerate
             // 
             this.btnGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnGenerate.Location = new System.Drawing.Point(698, 387);
+            this.btnGenerate.Location = new System.Drawing.Point(680, 387);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(171, 35);
             this.btnGenerate.TabIndex = 10;
@@ -309,11 +311,23 @@
             this.btnGenerate.UseVisualStyleBackColor = true;
             this.btnGenerate.Click += new System.EventHandler(this.BtnGenerate_Click);
             // 
+            // btnValidate
+            // 
+            this.btnValidate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnValidate.Location = new System.Drawing.Point(163, 387);
+            this.btnValidate.Name = "btnValidate";
+            this.btnValidate.Size = new System.Drawing.Size(181, 35);
+            this.btnValidate.TabIndex = 11;
+            this.btnValidate.Text = "Проверка данных";
+            this.btnValidate.UseVisualStyleBackColor = true;
+            this.btnValidate.Click += new System.EventHandler(this.BtnValidate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1210, 719);
+            this.Controls.Add(this.btnValidate);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.listBoxFiles);
             this.Controls.Add(this.buttonLoadData);
@@ -362,6 +376,7 @@
         private System.Windows.Forms.TextBox textBoxX0;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Button btnGenerate;
+        private System.Windows.Forms.Button btnValidate;
     }
 }
 

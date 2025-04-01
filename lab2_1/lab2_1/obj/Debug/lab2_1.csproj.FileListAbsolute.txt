@@ -1,0 +1,5 @@
+D:\holn\Desktop\Учеба\technology\lab2_1\lab2_1\obj\Debug\lab2_1.csproj.AssemblyReference.cache
+D:\holn\Desktop\Учеба\technology\lab2_1\lab2_1\obj\Debug\lab2_1.Form1.resources
+D:\holn\Desktop\Учеба\technology\lab2_1\lab2_1\obj\Debug\lab2_1.Properties.Resources.resources
+D:\holn\Desktop\Учеба\technology\lab2_1\lab2_1\obj\Debug\lab2_1.csproj.GenerateResource.cache
+D:\holn\Desktop\Учеба\technology\lab2_1\lab2_1\obj\Debug\lab2_1.csproj.CoreCompileInputs.cache

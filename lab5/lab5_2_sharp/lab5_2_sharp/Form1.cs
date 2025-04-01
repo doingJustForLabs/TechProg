@@ -15,6 +15,7 @@ namespace lab5_2_sharp
     public partial class Form1: Form
     {
         private readonly CalculationManager _calculationManager;
+        //private readonly TabManager _tabManager;
         private readonly DataLoader _dataLoader = new DataLoader();
         private readonly string resultsPath = @"D:\Holn\Desktop\results";
         private readonly Random _rand = new Random();
@@ -25,6 +26,26 @@ namespace lab5_2_sharp
             _calculationManager.InitializeLogFile();
             timerFilesUpdate.Enabled = true;
             InitializeAdditionalTabs();
+            SubscribeButtonEvents();
+        }
+
+        private void SubscribeButtonEvents()
+        {
+            foreach (TabPage tab in tabControl1.TabPages)
+            {
+                foreach (Control control in tab.Controls)
+                {
+                    if (control is Button button)
+                    {
+                        if (button.Name == "btnCalculate")
+                            button.Click += BtnCalculate_Click;
+                        else if (button.Name == "btnGenerate")
+                            button.Click += BtnGenerate_Click;
+                        else if (button.Name == "btnValidate")
+                            button.Click += BtnValidate_Click;
+                    }
+                }
+            }
         }
 
         private void InitializeAdditionalTabs()
@@ -121,6 +142,8 @@ namespace lab5_2_sharp
                     {
                         newButton.Click += BtnGenerate_Click;
                     }
+                    else if (button.Name == "btnValidate")
+                        newButton.Click += BtnValidate_Click;
                 }
 
                 return newButton;
@@ -131,16 +154,40 @@ namespace lab5_2_sharp
 
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
-            if (tabControl1.TabCount == 0)
+            StringBuilder errors = new StringBuilder();
+            List<TabPage> validTabs = new List<TabPage>();
+
+            // Сначала проверяем все вкладки
+            foreach (TabPage tab in tabControl1.TabPages)
             {
-                MessageBox.Show("Нет вкладок для расчета!", "Информация",
-                               MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+                try
+                {
+                    var inputs = GetInputValues(tab);
+                    ValidateInputs(inputs, tab.Text);
+                    validTabs.Add(tab);
+                }
+                catch (Exception ex)
+                {
+                    errors.AppendLine($"Вкладка '{tab.Text}': {ex.Message}");
+                }
             }
 
-            List<string> failedTabs = new List<string>();
+            // Если есть ошибки - показываем и отменяем расчет
+            if (errors.Length > 0)
+            {
+                var result = MessageBox.Show($"Обнаружены ошибки:\n{errors.ToString()}\n\n" +
+                                           "Рассчитать только корректные вкладки?",
+                                           "Ошибки в данных",
+                                           MessageBoxButtons.YesNo,
+                                           MessageBoxIcon.Warning);
 
-            foreach (TabPage tab in tabControl1.TabPages)
+                if (result != DialogResult.Yes)
+                    return;
+            }
+
+            // Рассчитываем только валидные вкладки
+            List<string> failedCalculations = new List<string>();
+            foreach (TabPage tab in validTabs)
             {
                 try
                 {
@@ -151,28 +198,27 @@ namespace lab5_2_sharp
                 }
                 catch (Exception ex)
                 {
-                    // Запоминаем вкладки с ошибками
-                    failedTabs.Add($"{tab.Text} ({ex.Message})");
+                    failedCalculations.Add($"{tab.Text} ({ex.Message})");
                 }
             }
 
+            // Показываем результаты
+            ShowCalculationResults(validTabs.Count, failedCalculations);
             LoadFileList();
+        }
 
-            if (failedTabs.Any())
-            {
-                string message = "Не удалось рассчитать следующие вкладки:\n" +
-                                string.Join("\n", failedTabs);
+        private void ShowCalculationResults(int successCount, List<string> failedCalculations)
+        {
+            string message = $"Успешно рассчитано: {successCount} из {tabControl1.TabCount} вкладок";
 
-                MessageBox.Show(message, "Результаты расчета",
-                              MessageBoxButtons.OK,
-                              MessageBoxIcon.Information);
-            }
-            else
+            if (failedCalculations.Any())
             {
-                MessageBox.Show("Все вкладки успешно рассчитаны!", "Успех",
-                              MessageBoxButtons.OK,
-                              MessageBoxIcon.Information);
+                message += "\n\nНе удалось рассчитать:\n" + string.Join("\n", failedCalculations);
             }
+
+            MessageBox.Show(message, "Результаты расчета",
+                          MessageBoxButtons.OK,
+                          failedCalculations.Any() ? MessageBoxIcon.Warning : MessageBoxIcon.Information);
         }
 
         //private bool CalculateForTab(TabPage tab)
@@ -195,14 +241,90 @@ namespace lab5_2_sharp
 
         private (double X0, double Y0, double Xk, double yCount, double StepX, double StepY) GetInputValues(TabPage tab)
         {
-            return (
-                GetValueFromTab(tab, "textBoxX0"),
-                GetValueFromTab(tab, "textBoxY0"),
-                GetValueFromTab(tab, "textBoxXk"),
-                GetValueFromTab(tab, "textBoxNy"),
-                GetValueFromTab(tab, "textBoxStepX"),
-                GetValueFromTab(tab, "textBoxStepY")
-            );
+            double x0 = GetValueFromTab(tab, "textBoxX0");
+            double xk = GetValueFromTab(tab, "textBoxXk");
+            double stepX = GetValueFromTab(tab, "textBoxStepX");
+            double yCount = GetValueFromTab(tab, "textBoxNy");
+            double stepY = GetValueFromTab(tab, "textBoxStepY");
+            double y0 = GetValueFromTab(tab, "textBoxY0");
+
+            // Проверка количества точек по X
+            double xPoints = (xk - x0) / stepX + 1;
+            if (xPoints > 100)
+            {
+                throw new Exception($"Количество точек по X ({xPoints}) превышает 100. Увеличьте шаг StepX.");
+            }
+
+            // Проверка количества точек по Y
+            if (yCount > 100)
+            {
+                throw new Exception($"Количество точек по Y ({yCount}) превышает 100.");
+            }
+
+            return (x0, y0, xk, yCount, stepX, stepY);
+        }
+
+        private void BtnValidate_Click(object sender, EventArgs e)
+        {
+            StringBuilder errors = new StringBuilder();
+            bool isValid = true;
+
+            // Проверяем все вкладки
+            foreach (TabPage tab in tabControl1.TabPages)
+            {
+                try
+                {
+                    var inputs = GetInputValues(tab);
+                    ValidateInputs(inputs, tab.Text);
+                }
+                catch (Exception ex)
+                {
+                    isValid = false;
+                    errors.AppendLine($"Ошибка во вкладке '{tab.Text}': {ex.Message}");
+                }
+            }
+
+            if (!isValid)
+            {
+                MessageBox.Show($"Обнаружены ошибки:\n{errors.ToString()}",
+                              "Ошибки в данных",
+                              MessageBoxButtons.OK,
+                              MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Все данные корректны. Можно выполнять расчет.",
+                              "Проверка пройдена",
+                              MessageBoxButtons.OK,
+                              MessageBoxIcon.Information);
+            }
+        }
+
+        private void ValidateInputs((double X0, double Y0, double Xk, double yCount, double StepX, double StepY) inputs, string tabName)
+        {
+            // Проверка количества точек по X
+            double xPoints = (inputs.Xk - inputs.X0) / inputs.StepX + 1;
+            if (xPoints > 100)
+            {
+                throw new Exception($"Количество точек по X ({Math.Ceiling(xPoints)}) превышает 100");
+            }
+
+            // Проверка количества точек по Y
+            if (inputs.yCount > 100)
+            {
+                throw new Exception($"Количество точек по Y ({inputs.yCount}) превышает 100");
+            }
+
+            // Дополнительные проверки
+            if (inputs.Xk <= inputs.X0)
+            {
+                throw new Exception("Xk должно быть больше X0");
+            }
+
+            if (inputs.StepX <= 0 || inputs.StepY <= 0)
+            {
+                throw new Exception("Шаги должны быть положительными");
+            }
         }
 
         private (double X0, double Y0, double Xk, double yCount, double StepX, double StepY) GenerateValidValues()
@@ -331,36 +453,36 @@ namespace lab5_2_sharp
             }
         }
 
-        private void DisplayCalculationData(CalculationData data)
-        {
-            dataGridViewFiles.Visible = true;
-            dataGridViewFiles.Columns.Clear();
-            dataGridViewFiles.Columns.Add("y\\x", "y\\x");
+        //private void DisplayCalculationData(CalculationData data)
+        //{
+        //    dataGridViewFiles.Visible = true;
+        //    dataGridViewFiles.Columns.Clear();
+        //    dataGridViewFiles.Columns.Add("y\\x", "y\\x");
 
-            foreach (var x in data.XValues)
-                dataGridViewFiles.Columns.Add($"x{x}", x.ToString());
+        //    foreach (var x in data.XValues)
+        //        dataGridViewFiles.Columns.Add($"x{x}", x.ToString());
 
-            for (int i = 0; i < data.YValues.Length; i++)
-            {
-                var row = new DataGridViewRow();
-                row.CreateCells(dataGridViewFiles);
-                row.Cells[0].Value = data.YValues[i];
+        //    for (int i = 0; i < data.YValues.Length; i++)
+        //    {
+        //        var row = new DataGridViewRow();
+        //        row.CreateCells(dataGridViewFiles);
+        //        row.Cells[0].Value = data.YValues[i];
 
-                for (int j = 0; j < data.XValues.Length; j++)
-                {
-                    if (double.IsNaN(data.Results[i, j]))
-                    {
-                        row.Cells[j + 1].Value = "NaN";
-                    }
-                    else
-                    {
-                        row.Cells[j + 1].Value = data.Results[i, j];
-                    }
-                }
+        //        for (int j = 0; j < data.XValues.Length; j++)
+        //        {
+        //            if (double.IsNaN(data.Results[i, j]))
+        //            {
+        //                row.Cells[j + 1].Value = "NaN";
+        //            }
+        //            else
+        //            {
+        //                row.Cells[j + 1].Value = data.Results[i, j];
+        //            }
+        //        }
 
-                dataGridViewFiles.Rows.Add(row);
-            }
-        }
+        //        dataGridViewFiles.Rows.Add(row);
+        //    }
+        //}
 
         private void TabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -446,7 +568,7 @@ namespace lab5_2_sharp
                 var data = _dataLoader.LoadFromFile(filePath);
                 if (data != null)
                 {
-                    DisplayCalculationData(data);
+                    DisplayLoadedData(data);
                 }
             }
             catch (Exception ex)
