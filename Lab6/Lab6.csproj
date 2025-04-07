@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0D02D578-5874-4DFE-92AC-DAEE930BB271}</ProjectGuid>
+    <ProjectGuid>{0BCA34BD-7D27-4BB4-872A-99839333AC01}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Lab6</RootNamespace>
     <AssemblyName>Lab6</AssemblyName>
@@ -46,7 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculate.cs" />
+    <Compile Include="CalculateManager.cs" />
+    <Compile Include="FileManager.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
