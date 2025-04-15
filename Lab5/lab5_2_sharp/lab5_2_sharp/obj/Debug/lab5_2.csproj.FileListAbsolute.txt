@@ -1,0 +1,7 @@
+D:\Study\Subjects\Sem4\TechProg\Lab5\lab5_2_sharp\lab5_2_sharp\obj\Debug\lab5_2.csproj.AssemblyReference.cache
+D:\Study\Subjects\Sem4\TechProg\Lab5\lab5_2_sharp\lab5_2_sharp\obj\Debug\lab5_2_sharp.Form1.resources
+D:\Study\Subjects\Sem4\TechProg\Lab5\lab5_2_sharp\lab5_2_sharp\obj\Debug\lab5_2_sharp.Properties.Resources.resources
+D:\Study\Subjects\Sem4\TechProg\Lab5\lab5_2_sharp\lab5_2_sharp\obj\Debug\lab5_2.csproj.GenerateResource.cache
+D:\Study\Subjects\Sem4\TechProg\Lab5\lab5_2_sharp\lab5_2_sharp\obj\Debug\lab5_2.csproj.CoreCompileInputs.cache
+D:\Study\Subjects\Sem4\TechProg\Lab5\lab5_2_sharp\lab5_2_sharp\obj\Debug\lab5_2_sharp.exe
+D:\Study\Subjects\Sem4\TechProg\Lab5\lab5_2_sharp\lab5_2_sharp\obj\Debug\lab5_2_sharp.pdb

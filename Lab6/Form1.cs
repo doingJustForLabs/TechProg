@@ -79,74 +79,90 @@ namespace Lab6
         {
             try
             {
-                foreach (TabPage tabPage in tabControl.TabPages)
+                comboBox.Items.Clear();
+
+                for (int tab = 0; tab < tabControl.TabPages.Count; tab++)
                 {
+                    TabPage tabPage = tabControl.TabPages[tab];
+
                     RichTextBox xTextBox = tabPage.Controls["richTextBox1"] as RichTextBox;
                     RichTextBox yTextBox = tabPage.Controls["richTextBox2"] as RichTextBox;
 
-                    List<double> xValues = ValidationError.ValidateRichTextBox(xTextBox, tabPage);
-                    List<double> yValues = ValidationError.ValidateRichTextBox(yTextBox, tabPage);
+                    int[] xValues = ValidationError.ValidateRichTextBox(xTextBox, tabPage);
+                    int[] yValues = ValidationError.ValidateRichTextBox(yTextBox, tabPage);
 
                     if (!ValidationError.ValidateValues(xValues, yValues))
                     {
                         return;
                     }
 
-                    FileManager.DataToRezFiles(tabControl, xValues, yValues);
+                    string fileName = $"G{tab + 1:0000}.rez";
+                    FileManager.DataToRezFile(fileName, tab, xValues, yValues);
 
-                    for (int i = 0; i < xValues.Count; i++)
-                    {
-                        logRichTextBox.Text += $"x: {xValues[i].ToString()}\n";
-                        logRichTextBox.Text += $"y: {yValues[i].ToString()}\n";
-                        logRichTextBox.Text += $"G(x,y) {CalculateManager.G(xValues[i], yValues[i])}\n";
-                    }
+                    comboBox.Items.Add(fileName);    
+                    comboBox.SelectedIndex = tab;
+                    comboBox.Enabled = true;
                 }
 
-            } catch (Exception ex)
+                MessageBox.Show("Наборы расчитаны!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                readBtn.Enabled = true;
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void readBtn_Click(object sender, EventArgs e)
+        {
+            string fileName = comboBox.SelectedItem.ToString();
+            FileManager.RezFileToData(dataGridView, fileName, upLeftCoords, bottomRightCoords);
         }
     }
 
     public static class ValidationError
     {
-        public static bool ValidateValues(List<double> x, List<double> y)
+        public static bool ValidateValues(int[] x, int[] y)
         {
-            if (x.Count == 0 ||  y.Count == 0)
+            if (x == null || y == null)
+            {
+                MessageBox.Show("Некорректные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (x.Length == 0 ||  y.Length == 0)
             {
                 MessageBox.Show("Данные не заполнены", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
-            if (x.Count != y.Count)
+            if (x.Length != y.Length)
             {
-                MessageBox.Show("Данных должно быть равное количество", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Непарное количество x и y", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
             return true;
         }
 
-        public static List<double> ValidateRichTextBox(RichTextBox richTextBox, TabPage tabPage)
+        public static int[] ValidateRichTextBox(RichTextBox richTextBox, TabPage tabPage)
         {
             string[] strings = richTextBox.Text.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            List<double> values = new List<double>();
+            List<int> values = new List<int>();
 
             for (int i = 0; i < strings.Length; i++)
             {
-                if (double.TryParse(strings[i], out double value))
+                if (int.TryParse(strings[i], out int value))
                 {
                     values.Add(value);
                 }
                 else
                 {
-                    MessageBox.Show($"Некорректные данные в наборе {tabPage.Text}");
                     return null;
                 }
             }
-            return values;
+            return values.ToArray();
         }
     }
 }

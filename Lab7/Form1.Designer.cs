@@ -39,19 +39,21 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.inputN = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             this.buttonOK = new System.Windows.Forms.Button();
             this.inputB = new System.Windows.Forms.NumericUpDown();
             this.inputA = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.inputN = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.inputGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inputN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inputN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // funcComboBox
@@ -167,6 +169,32 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             // 
+            // inputN
+            // 
+            this.inputN.Location = new System.Drawing.Point(35, 108);
+            this.inputN.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.inputN.Name = "inputN";
+            this.inputN.Size = new System.Drawing.Size(120, 29);
+            this.inputN.TabIndex = 5;
+            this.inputN.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 108);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(23, 25);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "n";
+            // 
             // buttonOK
             // 
             this.buttonOK.Location = new System.Drawing.Point(20, 176);
@@ -221,31 +249,19 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "a";
             // 
-            // inputN
+            // dataGridView1
             // 
-            this.inputN.Location = new System.Drawing.Point(35, 108);
-            this.inputN.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.inputN.Name = "inputN";
-            this.inputN.Size = new System.Drawing.Size(120, 29);
-            this.inputN.TabIndex = 5;
-            this.inputN.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 108);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(23, 25);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "n";
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(811, 106);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 72;
+            this.dataGridView1.RowTemplate.Height = 31;
+            this.dataGridView1.Size = new System.Drawing.Size(391, 293);
+            this.dataGridView1.TabIndex = 6;
             // 
             // Form1
             // 
@@ -253,6 +269,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1490, 571);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.inputGroupBox);
@@ -263,9 +280,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inputN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inputN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -290,6 +308,7 @@
         private System.Windows.Forms.Button buttonOK;
         private System.Windows.Forms.NumericUpDown inputN;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

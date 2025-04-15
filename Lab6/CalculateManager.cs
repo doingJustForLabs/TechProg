@@ -12,14 +12,17 @@ namespace Lab6
         {
             try
             {
+                if (y - 2 == 0)
+                {
+                    return double.NaN;
+                }
                 return x / (y - 2);
-
             }
-            catch (DivideByZeroException)
+            catch (OverflowException)
             {
                 return double.NaN;
             }
-            catch (OverflowException)
+            catch (Exception)
             {
                 return double.NaN;
             }

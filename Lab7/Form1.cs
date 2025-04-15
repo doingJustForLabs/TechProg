@@ -12,9 +12,6 @@ namespace Lab7
 {
     public partial class Form1: Form
     {
-        private ErrorHandler errorHandler = new ErrorHandler();
-        private Methods methods = new Methods();
-
         public Form1()
         {
             InitializeComponent();
@@ -35,38 +32,44 @@ namespace Lab7
 
         private void buttonOK_Click(object sender, EventArgs e)
         {
-            if (!errorHandler.ValidateComboBox(selectedFunction) || !errorHandler.ValidateComboBox(selectedMethod))
+            try
             {
-                return;
-            }
+                if (!ErrorHandler.ValidateComboBox(selectedFunction) || !ErrorHandler.ValidateComboBox(selectedMethod))
+                {
+                    return;
+                }
 
-            double a = (double)inputA.Value;
-            double b = (double)inputB.Value;
+                double a = (double)inputA.Value;
+                double b = (double)inputB.Value;
 
-            if (!errorHandler.ValidateIntervals(a, b))
+                if (!ErrorHandler.ValidateIntervals(a, b))
+                {
+                    return;
+                }
+
+                int n = (int)inputN.Value;
+
+                MessageBox.Show($"Выбрано: {selectedFunction}, {selectedMethod}");
+
+                if (selectedMethod == "Метод левых прямоугольников")
+                {
+                    double result = Methods.LeftRectangleMethod(selectedFunction, a, b, n);
+                }
+                else if (selectedMethod == "Метод правых прямоугольников")
+                {
+                    double result = Methods.RightRectangleMethod(selectedFunction, a, b, n);
+                }
+
+            } catch (Exception ex)
             {
-                return;
+                MessageBox.Show(ex.ToString(), "Ошибка", MessageBoxButtons.OK);
             }
-
-            int n = (int)inputN.Value;
-
-            MessageBox.Show($"Выбрано: {selectedFunction}, {selectedMethod}");
-
-            if (selectedMethod == "Метод левых прямоугольников")
-            {
-                double result = methods.LeftRectangleMethod(selectedFunction, a, b, n);
-            }
-            else if (selectedMethod == "Метод правых прямоугольников")
-            {
-                double result = methods.RightRectangleMethod(selectedFunction, a, b, n);
-            }
-
         }
     }
 
-    public class Methods
+    public static class Methods
     {
-        public float RightRectangleMethod(string func, double a, double b, int n)
+        public static float RightRectangleMethod(string func, double a, double b, int n)
         {
             float sum = 0;
             double deltaX = (a - b) / n;
@@ -74,7 +77,7 @@ namespace Lab7
             return sum;
         }
 
-        public float LeftRectangleMethod(string func, double a, double b, int n)
+        public static float LeftRectangleMethod(string func, double a, double b, int n)
         {
             float sum = 0;
             double deltaX = (a - b) / n;
@@ -85,17 +88,15 @@ namespace Lab7
 
     public class Solution
     {
-        Methods methods = new Methods();
-
         public float f(double x)
         {
             return 0;
         }
     }
 
-    public class ErrorHandler
+    public static class ErrorHandler
     {
-        public bool ValidateComboBox(string selectedComboBox)
+        public static bool ValidateComboBox(string selectedComboBox)
         {
             if (selectedComboBox == null)
             {
@@ -105,7 +106,7 @@ namespace Lab7
             return true;
         }
 
-        public bool ValidateIntervals(double a, double b)
+        public static bool ValidateIntervals(double a, double b)
         {
             if (a > b)
             {
