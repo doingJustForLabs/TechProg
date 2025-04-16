@@ -28,187 +28,120 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.funcComboBox = new System.Windows.Forms.ComboBox();
             this.inputGroupBox = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.methodComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.inputN = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.inputDeltaX = new System.Windows.Forms.NumericUpDown();
+            this.Δx = new System.Windows.Forms.Label();
             this.buttonOK = new System.Windows.Forms.Button();
             this.inputB = new System.Windows.Forms.NumericUpDown();
             this.inputA = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.funcListBox = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.methodListBox = new System.Windows.Forms.ListBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.graphsPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.inputGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.inputN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputDeltaX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // funcComboBox
-            // 
-            this.funcComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.funcComboBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.funcComboBox.FormattingEnabled = true;
-            this.funcComboBox.Items.AddRange(new object[] {
-            "exp(x)",
-            "log(x)",
-            "log10(x)"});
-            this.funcComboBox.Location = new System.Drawing.Point(11, 62);
-            this.funcComboBox.Name = "funcComboBox";
-            this.funcComboBox.Size = new System.Drawing.Size(192, 32);
-            this.funcComboBox.Sorted = true;
-            this.funcComboBox.TabIndex = 0;
-            this.funcComboBox.SelectedIndexChanged += new System.EventHandler(this.funcComboBox_SelectedIndexChanged_1);
             // 
             // inputGroupBox
             // 
-            this.inputGroupBox.Controls.Add(this.label2);
-            this.inputGroupBox.Controls.Add(this.label1);
-            this.inputGroupBox.Controls.Add(this.methodComboBox);
-            this.inputGroupBox.Controls.Add(this.funcComboBox);
-            this.inputGroupBox.Location = new System.Drawing.Point(12, 12);
+            this.inputGroupBox.Controls.Add(this.groupBox2);
+            this.inputGroupBox.Controls.Add(this.methodListBox);
+            this.inputGroupBox.Controls.Add(this.label5);
+            this.inputGroupBox.Controls.Add(this.buttonOK);
+            this.inputGroupBox.Controls.Add(this.label6);
+            this.inputGroupBox.Controls.Add(this.funcListBox);
+            this.inputGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.inputGroupBox.Location = new System.Drawing.Point(0, 0);
             this.inputGroupBox.Name = "inputGroupBox";
-            this.inputGroupBox.Size = new System.Drawing.Size(356, 247);
+            this.inputGroupBox.Size = new System.Drawing.Size(1185, 206);
             this.inputGroupBox.TabIndex = 2;
             this.inputGroupBox.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 108);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(328, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Выберите метод интегрирования";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Выберите функцию";
-            // 
-            // methodComboBox
-            // 
-            this.methodComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.methodComboBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.methodComboBox.Items.AddRange(new object[] {
-            "Метод правых прямоугольников",
-            "Метод левых прямоугольников"});
-            this.methodComboBox.Location = new System.Drawing.Point(11, 146);
-            this.methodComboBox.Name = "methodComboBox";
-            this.methodComboBox.Size = new System.Drawing.Size(323, 32);
-            this.methodComboBox.TabIndex = 0;
-            this.methodComboBox.SelectedIndexChanged += new System.EventHandler(this.methodComboBox_SelectedIndexChanged);
+            this.inputGroupBox.Text = "Input";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.listView1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 265);
+            this.groupBox1.Controls.Add(this.dataGridView);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox1.Location = new System.Drawing.Point(0, 206);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(542, 290);
+            this.groupBox1.Size = new System.Drawing.Size(785, 580);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Output";
             // 
-            // listView1
+            // dataGridView
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(11, 28);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(515, 246);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToDeleteRows = false;
+            this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView.Location = new System.Drawing.Point(3, 25);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ReadOnly = true;
+            this.dataGridView.RowHeadersWidth = 72;
+            this.dataGridView.RowTemplate.Height = 31;
+            this.dataGridView.Size = new System.Drawing.Size(779, 552);
+            this.dataGridView.TabIndex = 6;
             // 
-            // columnHeader1
+            // inputDeltaX
             // 
-            this.columnHeader1.Text = "x";
-            this.columnHeader1.Width = 50;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "F(x)";
-            this.columnHeader2.Width = 110;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "F(x + Δx)";
-            this.columnHeader3.Width = 100;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.inputN);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.buttonOK);
-            this.groupBox2.Controls.Add(this.inputB);
-            this.groupBox2.Controls.Add(this.inputA);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(374, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(180, 247);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            // 
-            // inputN
-            // 
-            this.inputN.Location = new System.Drawing.Point(35, 108);
-            this.inputN.Minimum = new decimal(new int[] {
+            this.inputDeltaX.DecimalPlaces = 3;
+            this.inputDeltaX.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.inputDeltaX.Location = new System.Drawing.Point(73, 129);
+            this.inputDeltaX.Name = "inputDeltaX";
+            this.inputDeltaX.Size = new System.Drawing.Size(107, 29);
+            this.inputDeltaX.TabIndex = 7;
+            this.inputDeltaX.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.inputN.Name = "inputN";
-            this.inputN.Size = new System.Drawing.Size(120, 29);
-            this.inputN.TabIndex = 5;
-            this.inputN.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.inputDeltaX.ValueChanged += new System.EventHandler(this.inputDeltaX_ValueChanged);
             // 
-            // label5
+            // Δx
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 108);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(23, 25);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "n";
+            this.Δx.AutoSize = true;
+            this.Δx.Location = new System.Drawing.Point(31, 131);
+            this.Δx.Name = "Δx";
+            this.Δx.Size = new System.Drawing.Size(36, 25);
+            this.Δx.TabIndex = 6;
+            this.Δx.Text = "Δx";
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(20, 176);
+            this.buttonOK.Enabled = false;
+            this.buttonOK.Location = new System.Drawing.Point(892, 86);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(144, 48);
             this.buttonOK.TabIndex = 3;
-            this.buttonOK.Text = "OK";
+            this.buttonOK.Text = "Run";
             this.buttonOK.UseVisualStyleBackColor = true;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // inputB
             // 
             this.inputB.DecimalPlaces = 1;
-            this.inputB.Location = new System.Drawing.Point(35, 66);
+            this.inputB.Location = new System.Drawing.Point(60, 84);
             this.inputB.Minimum = new decimal(new int[] {
             100,
             0,
@@ -217,11 +150,12 @@
             this.inputB.Name = "inputB";
             this.inputB.Size = new System.Drawing.Size(120, 29);
             this.inputB.TabIndex = 2;
+            this.inputB.ValueChanged += new System.EventHandler(this.inputB_ValueChanged);
             // 
             // inputA
             // 
             this.inputA.DecimalPlaces = 1;
-            this.inputA.Location = new System.Drawing.Point(35, 24);
+            this.inputA.Location = new System.Drawing.Point(60, 42);
             this.inputA.Minimum = new decimal(new int[] {
             100,
             0,
@@ -230,11 +164,12 @@
             this.inputA.Name = "inputA";
             this.inputA.Size = new System.Drawing.Size(120, 29);
             this.inputA.TabIndex = 2;
+            this.inputA.ValueChanged += new System.EventHandler(this.inputA_ValueChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 68);
+            this.label4.Location = new System.Drawing.Point(31, 86);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(23, 25);
             this.label4.TabIndex = 0;
@@ -243,72 +178,137 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 25);
+            this.label3.Location = new System.Drawing.Point(31, 43);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(23, 25);
             this.label3.TabIndex = 0;
             this.label3.Text = "a";
             // 
-            // dataGridView1
+            // funcListBox
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(811, 106);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 72;
-            this.dataGridView1.RowTemplate.Height = 31;
-            this.dataGridView1.Size = new System.Drawing.Size(391, 293);
-            this.dataGridView1.TabIndex = 6;
+            this.funcListBox.FormattingEnabled = true;
+            this.funcListBox.ItemHeight = 24;
+            this.funcListBox.Items.AddRange(new object[] {
+            "exp(x)",
+            "ln(x)",
+            "lg(x)"});
+            this.funcListBox.Location = new System.Drawing.Point(24, 78);
+            this.funcListBox.Name = "funcListBox";
+            this.funcListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.funcListBox.Size = new System.Drawing.Size(192, 100);
+            this.funcListBox.TabIndex = 6;
+            this.funcListBox.SelectedIndexChanged += new System.EventHandler(this.funcListBox_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(19, 41);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(197, 25);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Выберите функцию";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(237, 41);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(328, 25);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Выберите метод интегрирования";
+            // 
+            // methodListBox
+            // 
+            this.methodListBox.FormattingEnabled = true;
+            this.methodListBox.ItemHeight = 24;
+            this.methodListBox.Items.AddRange(new object[] {
+            "Метод левых прямоугольников",
+            "Метод правых прямоугольников"});
+            this.methodListBox.Location = new System.Drawing.Point(242, 78);
+            this.methodListBox.Name = "methodListBox";
+            this.methodListBox.Size = new System.Drawing.Size(323, 100);
+            this.methodListBox.TabIndex = 7;
+            this.methodListBox.SelectedIndexChanged += new System.EventHandler(this.methodListBox_SelectedIndexChanged);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.inputDeltaX);
+            this.groupBox2.Controls.Add(this.inputA);
+            this.groupBox2.Controls.Add(this.inputB);
+            this.groupBox2.Controls.Add(this.Δx);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Location = new System.Drawing.Point(581, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(204, 206);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Params";
+            // 
+            // graphsPanel
+            // 
+            this.graphsPanel.AutoScroll = true;
+            this.graphsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.graphsPanel.Location = new System.Drawing.Point(3, 25);
+            this.graphsPanel.Name = "graphsPanel";
+            this.graphsPanel.Size = new System.Drawing.Size(391, 552);
+            this.graphsPanel.TabIndex = 5;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.graphsPanel);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBox3.Location = new System.Drawing.Point(788, 206);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(397, 580);
+            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Graphs";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1490, 571);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(1185, 786);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.inputGroupBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.Text = "Form1";
             this.inputGroupBox.ResumeLayout(false);
             this.inputGroupBox.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.inputN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputDeltaX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox funcComboBox;
         private System.Windows.Forms.GroupBox inputGroupBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox methodComboBox;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown inputB;
         private System.Windows.Forms.NumericUpDown inputA;
         private System.Windows.Forms.Button buttonOK;
-        private System.Windows.Forms.NumericUpDown inputN;
+        private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.Label Δx;
+        private System.Windows.Forms.NumericUpDown inputDeltaX;
+        private System.Windows.Forms.ListBox funcListBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ListBox methodListBox;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.FlowLayoutPanel graphsPanel;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 

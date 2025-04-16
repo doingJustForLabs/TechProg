@@ -7,113 +7,138 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Lab7.IntegralMethods;
+using static Lab7.FileManager;
+
 
 namespace Lab7
 {
     public partial class Form1: Form
     {
+        public string[] selectedFunctions;
+        public string selectedMethod;
+        DataTable dataTable = new DataTable();
+
+        GraphicManager graphicManager = new GraphicManager();
+
         public Form1()
         {
             InitializeComponent();
+            InitializeDataTable();
+            graphicManager.PreRenderGraphs();
         }
 
-        public string selectedFunction;
-        public string selectedMethod;
-
-        private void methodComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void InitializeDataTable()
         {
-            selectedMethod = methodComboBox.SelectedItem.ToString();
-        }
-
-        private void funcComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            selectedFunction = funcComboBox.SelectedItem.ToString();
+            dataTable.Columns.Clear();
+            dataTable.Columns.Add("№", typeof(int));
+            dataTable.Columns.Add("x", typeof(double));
         }
 
         private void buttonOK_Click(object sender, EventArgs e)
         {
             try
             {
-                if (!ErrorHandler.ValidateComboBox(selectedFunction) || !ErrorHandler.ValidateComboBox(selectedMethod))
+                if (selectedFunctions == null || selectedFunctions.Length == 0)
                 {
+                    MessageBox.Show("Выберите хотя бы одну функцию!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                double a = (double)inputA.Value;
-                double b = (double)inputB.Value;
-
-                if (!ErrorHandler.ValidateIntervals(a, b))
+                if (string.IsNullOrEmpty(selectedMethod))
                 {
+                    MessageBox.Show("Выберите метод интегрирования!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                int n = (int)inputN.Value;
-
-                MessageBox.Show($"Выбрано: {selectedFunction}, {selectedMethod}");
-
-                if (selectedMethod == "Метод левых прямоугольников")
+                if (!double.TryParse(inputA.Text, out double a) ||
+                    !double.TryParse(inputB.Text, out double b) ||
+                    !double.TryParse(inputDeltaX.Text, out double deltaX) ||
+                    a >= b || deltaX <= 0)
                 {
-                    double result = Methods.LeftRectangleMethod(selectedFunction, a, b, n);
+                    MessageBox.Show("Ошибка ввода параметров! Убедитесь, что a < b и Δx > 0", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
-                else if (selectedMethod == "Метод правых прямоугольников")
+
+                buttonOK.Enabled = true;
+
+                dataTable.Rows.Clear();
+                InitializeMethodColumns();
+
+                foreach (var functionName in selectedFunctions)
                 {
-                    double result = Methods.RightRectangleMethod(selectedFunction, a, b, n);
+                    Func<double, double> selectedFunc = GetSelectedFunction(functionName);
+                    double result = CalculateIntegral(selectedFunc, a, b, deltaX, selectedMethod);
+
+                    FileManager.SaveCalculationToFile(
+                        selectedMethod,
+                        functionName,
+                        a, b, deltaX,
+                        result,
+                        dataTable
+                    );
                 }
+                MessageBox.Show($"Вычисления записаны в файл {historyFilePath}", "Уведомление", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                dataGridView.DataSource = dataTable;
 
             } catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString(), "Ошибка", MessageBoxButtons.OK);
             }
         }
-    }
 
-    public static class Methods
-    {
-        public static float RightRectangleMethod(string func, double a, double b, int n)
+        private void InitializeMethodColumns()
         {
-            float sum = 0;
-            double deltaX = (a - b) / n;
-
-            return sum;
-        }
-
-        public static float LeftRectangleMethod(string func, double a, double b, int n)
-        {
-            float sum = 0;
-            double deltaX = (a - b) / n;
-
-            return sum;
-        }
-    }
-
-    public class Solution
-    {
-        public float f(double x)
-        {
-            return 0;
-        }
-    }
-
-    public static class ErrorHandler
-    {
-        public static bool ValidateComboBox(string selectedComboBox)
-        {
-            if (selectedComboBox == null)
+            while (dataTable.Columns.Count > 2)
             {
-                MessageBox.Show("Выберите функцию и метод", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
+                dataTable.Columns.RemoveAt(2);
             }
-            return true;
+
+            switch (selectedMethod)
+            {
+                case "Метод правых прямоугольников":
+                    dataTable.Columns.Add("f(x + Δx)");
+                    dataTable.Columns.Add("sum");
+                    break;
+
+                case "Метод левых прямоугольников":
+                    dataTable.Columns.Add("f(x)");
+                    dataTable.Columns.Add("sum");
+                    break;
+            }
         }
 
-        public static bool ValidateIntervals(double a, double b)
+        private Func<double, double> GetSelectedFunction(string functionName)
         {
-            if (a > b)
+            switch (functionName)
             {
-                MessageBox.Show("Некорректный интервал", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
+                case "exp(x)": 
+                    return x => Math.Exp(x);
+                case "ln(x)": 
+                    return x => Math.Log(x);
+                case "lg(x)": 
+                    return x => Math.Log10(x);
+                default: 
+                    throw new ArgumentException("Неизвестная функция");
             }
-            return true;
+        }
+
+        private double CalculateIntegral(Func<double, double> f, double a, double b, double deltaX, string methodName)
+        {
+            dataTable.Rows.Clear();
+
+            switch (methodName)
+            {
+                case "Метод правых прямоугольников":
+                    return RightRectangleMethod(f, a, b, deltaX, dataTable);
+
+                case "Метод левых прямоугольников":
+                    return LeftRectangleMethod(f, a, b, deltaX, dataTable);
+
+                default:
+                    throw new ArgumentException("Неизвестный метод");
+            }
         }
     }
 }

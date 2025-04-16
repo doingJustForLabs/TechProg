@@ -4,6 +4,7 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
+using static Lab6.DataBaseManager;
 
 namespace Lab6
 {
@@ -34,6 +35,8 @@ namespace Lab6
                     }
                 }
             }
+
+            SaveFileToDatabase(fileName);
         }
 
         public static void RezFileToData(DataGridView dataGridView, string fileName, TextBox ulCoords, TextBox brCoords)

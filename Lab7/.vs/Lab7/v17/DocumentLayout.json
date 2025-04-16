@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|d:\\study\\subjects\\sem4\\techprog\\lab7\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|d:\\study\\subjects\\sem4\\techprog\\lab7\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|solutionrelative:filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|d:\\study\\subjects\\sem4\\techprog\\lab7\\graphicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|solutionrelative:graphicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\datavalidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|solutionrelative:datavalidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,10 +36,23 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAwwFkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAowAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T10:06:35.611Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileManager.cs",
+              "DocumentMoniker": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\FileManager.cs",
+              "RelativeDocumentMoniker": "FileManager.cs",
+              "ToolTip": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\FileManager.cs",
+              "RelativeToolTip": "FileManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T15:23:08.463Z",
               "EditorCaption": ""
             },
             {
@@ -44,15 +65,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentIndex": 2,
+              "Title": "GraphicManager.cs",
+              "DocumentMoniker": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\GraphicManager.cs",
+              "RelativeDocumentMoniker": "GraphicManager.cs",
+              "ToolTip": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\GraphicManager.cs",
+              "RelativeToolTip": "GraphicManager.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAiwHUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T10:06:31.599Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2025-04-16T12:51:02.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataValidate.cs",
+              "DocumentMoniker": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\DataValidate.cs",
+              "RelativeDocumentMoniker": "DataValidate.cs",
+              "ToolTip": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\DataValidate.cs",
+              "RelativeToolTip": "DataValidate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T12:47:16.197Z"
             }
           ]
         }
