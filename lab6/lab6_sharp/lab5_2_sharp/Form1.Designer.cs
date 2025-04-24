@@ -55,9 +55,15 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.btnGenerate = new System.Windows.Forms.Button();
             this.btnValidate = new System.Windows.Forms.Button();
+            this.rangeTextBox = new System.Windows.Forms.TextBox();
+            this.radioSubmatrix = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioFullMatrix = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFiles)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonCalc
@@ -128,18 +134,18 @@
             this.dataGridViewFiles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewFiles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFiles.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridViewFiles.Location = new System.Drawing.Point(0, 455);
+            this.dataGridViewFiles.Location = new System.Drawing.Point(0, 512);
             this.dataGridViewFiles.Name = "dataGridViewFiles";
-            this.dataGridViewFiles.Size = new System.Drawing.Size(1210, 264);
+            this.dataGridViewFiles.Size = new System.Drawing.Size(1254, 207);
             this.dataGridViewFiles.TabIndex = 7;
             this.dataGridViewFiles.Visible = false;
             // 
             // buttonLoadData
             // 
             this.buttonLoadData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonLoadData.Location = new System.Drawing.Point(986, 377);
+            this.buttonLoadData.Location = new System.Drawing.Point(1043, 377);
             this.buttonLoadData.Name = "buttonLoadData";
-            this.buttonLoadData.Size = new System.Drawing.Size(191, 45);
+            this.buttonLoadData.Size = new System.Drawing.Size(134, 45);
             this.buttonLoadData.TabIndex = 8;
             this.buttonLoadData.Text = "Вывести данные из файла";
             this.buttonLoadData.UseVisualStyleBackColor = true;
@@ -156,7 +162,7 @@
             // 
             // timerFilesUpdate
             // 
-            this.timerFilesUpdate.Interval = 500;
+            this.timerFilesUpdate.Interval = 2000;
             this.timerFilesUpdate.Tick += new System.EventHandler(this.timerFilesUpdate_Tick);
             // 
             // tabPage1
@@ -303,7 +309,7 @@
             // btnGenerate
             // 
             this.btnGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnGenerate.Location = new System.Drawing.Point(680, 387);
+            this.btnGenerate.Location = new System.Drawing.Point(680, 352);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(171, 35);
             this.btnGenerate.TabIndex = 10;
@@ -322,11 +328,66 @@
             this.btnValidate.UseVisualStyleBackColor = true;
             this.btnValidate.Click += new System.EventHandler(this.BtnValidate_Click);
             // 
+            // rangeTextBox
+            // 
+            this.rangeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rangeTextBox.Location = new System.Drawing.Point(851, 460);
+            this.rangeTextBox.Name = "rangeTextBox";
+            this.rangeTextBox.Size = new System.Drawing.Size(178, 24);
+            this.rangeTextBox.TabIndex = 13;
+            this.rangeTextBox.Text = "(0,0)(0,0)";
+            // 
+            // radioSubmatrix
+            // 
+            this.radioSubmatrix.AutoSize = true;
+            this.radioSubmatrix.Location = new System.Drawing.Point(15, 19);
+            this.radioSubmatrix.Name = "radioSubmatrix";
+            this.radioSubmatrix.Size = new System.Drawing.Size(138, 17);
+            this.radioSubmatrix.TabIndex = 14;
+            this.radioSubmatrix.TabStop = true;
+            this.radioSubmatrix.Text = "Выводить подматрицу";
+            this.radioSubmatrix.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioFullMatrix);
+            this.groupBox1.Controls.Add(this.radioSubmatrix);
+            this.groupBox1.Location = new System.Drawing.Point(636, 425);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 81);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            // 
+            // radioFullMatrix
+            // 
+            this.radioFullMatrix.AutoSize = true;
+            this.radioFullMatrix.Checked = true;
+            this.radioFullMatrix.Location = new System.Drawing.Point(15, 42);
+            this.radioFullMatrix.Name = "radioFullMatrix";
+            this.radioFullMatrix.Size = new System.Drawing.Size(96, 17);
+            this.radioFullMatrix.TabIndex = 15;
+            this.radioFullMatrix.TabStop = true;
+            this.radioFullMatrix.Text = "Выводить все";
+            this.radioFullMatrix.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(847, 425);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 20);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Подматрица";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1210, 719);
+            this.ClientSize = new System.Drawing.Size(1254, 719);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.rangeTextBox);
             this.Controls.Add(this.btnValidate);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.listBoxFiles);
@@ -347,7 +408,10 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -378,6 +442,11 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.Button btnValidate;
+        private System.Windows.Forms.TextBox rangeTextBox;
+        private System.Windows.Forms.RadioButton radioSubmatrix;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton radioFullMatrix;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -1,41 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\",
+  "WorkspaceRootPath": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|d:\\holn\\desktop\\\u0443\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|solutionrelative:lab5_2_sharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|d:\\holn\\desktop\\\u0443\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|solutionrelative:lab5_2_sharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\dataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|solutionrelative:lab5_2_sharp\\dataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|d:\\holn\\desktop\\\u0443\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\formcalculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|solutionrelative:lab5_2_sharp\\formcalculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2_sharp.csproj|D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\formcalculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2_sharp.csproj|solutionrelative:lab5_2_sharp\\formcalculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|d:\\holn\\desktop\\\u0443\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\pointgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\pointgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|solutionrelative:lab5_2_sharp\\pointgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2_sharp.csproj|D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\pointgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2_sharp.csproj|solutionrelative:lab5_2_sharp\\pointgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\dataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|solutionrelative:lab5_2_sharp\\dataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|d:\\holn\\desktop\\\u0443\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\tabmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:2:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|d:\\holn\\desktop\\study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\formcalculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|solutionrelative:lab5_2_sharp\\formcalculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|solutionrelative:lab5_2_sharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|solutionrelative:lab5_2_sharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\tabmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|solutionrelative:lab5_2_sharp\\tabmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|d:\\holn\\desktop\\\u0443\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2_sharp.csproj|D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\formcalculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2_sharp.csproj|solutionrelative:lab5_2_sharp\\formcalculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2_sharp.csproj|D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\pointgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2_sharp.csproj|solutionrelative:lab5_2_sharp\\pointgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0280CA12-E44A-4008-9E61-DF4F244FEBF1}|lab5_2_sharp\\lab5_2.csproj|solutionrelative:lab5_2_sharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,33 +46,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "formCalculate.cs",
-              "DocumentMoniker": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\formCalculate.cs",
+              "DocumentMoniker": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\formCalculate.cs",
               "RelativeDocumentMoniker": "lab5_2_sharp\\formCalculate.cs",
-              "ToolTip": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\formCalculate.cs",
+              "ToolTip": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\formCalculate.cs",
               "RelativeToolTip": "lab5_2_sharp\\formCalculate.cs",
               "ViewState": "AgIAAIkAAAAAAAAAAAAuwG4AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T12:57:51.267Z",
               "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PointGenerator.cs",
-              "DocumentMoniker": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\PointGenerator.cs",
-              "RelativeDocumentMoniker": "lab5_2_sharp\\PointGenerator.cs",
-              "ToolTip": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\PointGenerator.cs",
-              "RelativeToolTip": "lab5_2_sharp\\PointGenerator.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBUAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T11:09:57.883Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -81,38 +68,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PointGenerator.cs",
+              "DocumentMoniker": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\PointGenerator.cs",
+              "RelativeDocumentMoniker": "lab5_2_sharp\\PointGenerator.cs",
+              "ToolTip": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\PointGenerator.cs",
+              "RelativeToolTip": "lab5_2_sharp\\PointGenerator.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T11:09:57.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\Form1.cs",
+              "DocumentMoniker": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\Form1.cs",
               "RelativeDocumentMoniker": "lab5_2_sharp\\Form1.cs",
-              "ToolTip": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\Form1.cs",
+              "ToolTip": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\Form1.cs",
               "RelativeToolTip": "lab5_2_sharp\\Form1.cs",
-              "ViewState": "AgIAAOEBAAAAAAAAAAAcwKcBAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAADACAAAAAAAAAAAiwE4CAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T12:50:32.359Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "TabManager.cs",
-              "DocumentMoniker": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\TabManager.cs",
+              "DocumentMoniker": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\TabManager.cs",
               "RelativeDocumentMoniker": "lab5_2_sharp\\TabManager.cs",
-              "ToolTip": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\TabManager.cs",
+              "ToolTip": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\TabManager.cs",
               "RelativeToolTip": "lab5_2_sharp\\TabManager.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAA4wFcAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAcwFcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T10:23:36.554Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "formCalculate.cs",
-              "DocumentMoniker": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\formCalculate.cs",
+              "DocumentMoniker": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\formCalculate.cs",
               "RelativeDocumentMoniker": "lab5_2_sharp\\formCalculate.cs",
-              "ToolTip": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\formCalculate.cs",
+              "ToolTip": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\formCalculate.cs",
               "RelativeToolTip": "lab5_2_sharp\\formCalculate.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAAwG4AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAmwLkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T10:23:59.069Z",
               "EditorCaption": ""
@@ -121,22 +121,21 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\Program.cs",
+              "DocumentMoniker": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\Program.cs",
               "RelativeDocumentMoniker": "lab5_2_sharp\\Program.cs",
-              "ToolTip": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\Program.cs",
+              "ToolTip": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\Program.cs",
               "RelativeToolTip": "lab5_2_sharp\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T10:19:13.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T10:19:13.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\Form1.cs",
+              "DocumentMoniker": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\Form1.cs",
               "RelativeDocumentMoniker": "lab5_2_sharp\\Form1.cs",
-              "ToolTip": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "lab5_2_sharp\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T10:15:28.05Z",
@@ -144,24 +143,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "DataLoader.cs",
-              "DocumentMoniker": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\DataLoader.cs",
+              "DocumentMoniker": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\DataLoader.cs",
               "RelativeDocumentMoniker": "lab5_2_sharp\\DataLoader.cs",
-              "ToolTip": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\DataLoader.cs",
+              "ToolTip": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\DataLoader.cs",
               "RelativeToolTip": "lab5_2_sharp\\DataLoader.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAowCIAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAYwIUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T21:45:19.132Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PointGenerator.cs",
-              "DocumentMoniker": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\PointGenerator.cs",
+              "DocumentMoniker": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\PointGenerator.cs",
               "RelativeDocumentMoniker": "lab5_2_sharp\\PointGenerator.cs",
-              "ToolTip": "D:\\holn\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\PointGenerator.cs",
+              "ToolTip": "D:\\holn\\Desktop\\Study\\technology\\lab5\\lab5_2_sharp\\lab5_2_sharp\\PointGenerator.cs",
               "RelativeToolTip": "lab5_2_sharp\\PointGenerator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

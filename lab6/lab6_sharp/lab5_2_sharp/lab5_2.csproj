@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{85D7D2EA-E175-472E-A22D-74DC3EC97D5B}</ProjectGuid>
+    <ProjectGuid>{0280CA12-E44A-4008-9E61-DF4F244FEBF1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>lab8</RootNamespace>
-    <AssemblyName>lab8</AssemblyName>
+    <RootNamespace>lab5_2_sharp</RootNamespace>
+    <AssemblyName>lab5_2_sharp</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,13 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataBinaryLoader.cs" />
+    <Compile Include="TabManager.cs" />
+    <Compile Include="DataLoader.cs" />
+    <Compile Include="formCalculate.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="MatrixTransformation.cs" />
+    <Compile Include="PointGenerator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

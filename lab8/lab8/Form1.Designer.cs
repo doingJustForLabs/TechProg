@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.letterCounter = new System.Windows.Forms.NumericUpDown();
             this.digitCounter = new System.Windows.Forms.NumericUpDown();
             this.letterLabel = new System.Windows.Forms.Label();
             this.digitLabel = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.countersTab = new System.Windows.Forms.TabPage();
+            this.comboBoxLetters = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Row = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,7 +49,6 @@
             this.noFilter = new System.Windows.Forms.RadioButton();
             this.startsWithDigit = new System.Windows.Forms.RadioButton();
             this.startsWithLetterOrDigit = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.letterCounter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.digitCounter)).BeginInit();
             this.tabControl.SuspendLayout();
             this.countersTab.SuspendLayout();
@@ -59,31 +58,9 @@
             this.firstCharGroup.SuspendLayout();
             this.SuspendLayout();
             // 
-            // letterCounter
-            // 
-            this.letterCounter.Location = new System.Drawing.Point(15, 54);
-            this.letterCounter.Maximum = new decimal(new int[] {
-            90,
-            0,
-            0,
-            0});
-            this.letterCounter.Minimum = new decimal(new int[] {
-            65,
-            0,
-            0,
-            0});
-            this.letterCounter.Name = "letterCounter";
-            this.letterCounter.Size = new System.Drawing.Size(120, 20);
-            this.letterCounter.TabIndex = 0;
-            this.letterCounter.Value = new decimal(new int[] {
-            65,
-            0,
-            0,
-            0});
-            this.letterCounter.ValueChanged += new System.EventHandler(this.LetterCounter_ValueChanged);
-            // 
             // digitCounter
             // 
+            this.digitCounter.Enabled = false;
             this.digitCounter.Location = new System.Drawing.Point(165, 54);
             this.digitCounter.Maximum = new decimal(new int[] {
             9,
@@ -126,9 +103,9 @@
             // 
             // countersTab
             // 
+            this.countersTab.Controls.Add(this.comboBoxLetters);
             this.countersTab.Controls.Add(this.dataGridView1);
             this.countersTab.Controls.Add(this.digitLabel);
-            this.countersTab.Controls.Add(this.letterCounter);
             this.countersTab.Controls.Add(this.letterLabel);
             this.countersTab.Controls.Add(this.digitCounter);
             this.countersTab.Location = new System.Drawing.Point(4, 22);
@@ -138,6 +115,17 @@
             this.countersTab.TabIndex = 0;
             this.countersTab.Text = "Счётчики";
             this.countersTab.UseVisualStyleBackColor = true;
+            // 
+            // comboBoxLetters
+            // 
+            this.comboBoxLetters.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxLetters.Enabled = false;
+            this.comboBoxLetters.FormattingEnabled = true;
+            this.comboBoxLetters.Location = new System.Drawing.Point(18, 54);
+            this.comboBoxLetters.Name = "comboBoxLetters";
+            this.comboBoxLetters.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxLetters.TabIndex = 5;
+            this.comboBoxLetters.SelectedIndexChanged += new System.EventHandler(this.ComboBoxLetters_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
@@ -201,10 +189,12 @@
             // noTransform
             // 
             this.noTransform.AutoSize = true;
+            this.noTransform.Checked = true;
             this.noTransform.Location = new System.Drawing.Point(6, 126);
             this.noTransform.Name = "noTransform";
             this.noTransform.Size = new System.Drawing.Size(131, 17);
             this.noTransform.TabIndex = 7;
+            this.noTransform.TabStop = true;
             this.noTransform.Text = "Без преобразований";
             this.noTransform.UseVisualStyleBackColor = true;
             this.noTransform.CheckedChanged += new System.EventHandler(this.FilterChanged);
@@ -258,10 +248,12 @@
             // noFilter
             // 
             this.noFilter.AutoSize = true;
+            this.noFilter.Checked = true;
             this.noFilter.Location = new System.Drawing.Point(9, 165);
             this.noFilter.Name = "noFilter";
             this.noFilter.Size = new System.Drawing.Size(96, 17);
             this.noFilter.TabIndex = 4;
+            this.noFilter.TabStop = true;
             this.noFilter.Text = "Без фильтров";
             this.noFilter.UseVisualStyleBackColor = true;
             this.noFilter.CheckedChanged += new System.EventHandler(this.FilterChanged);
@@ -297,7 +289,6 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.letterCounter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.digitCounter)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.countersTab.ResumeLayout(false);
@@ -313,8 +304,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.NumericUpDown letterCounter;
         private System.Windows.Forms.NumericUpDown digitCounter;
         private System.Windows.Forms.Label letterLabel;
         private System.Windows.Forms.Label digitLabel;
@@ -335,6 +324,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Col;
         private System.Windows.Forms.DataGridViewTextBoxColumn Original;
         private System.Windows.Forms.DataGridViewTextBoxColumn Transformed;
+        private System.Windows.Forms.ComboBox comboBoxLetters;
     }
 }
 
