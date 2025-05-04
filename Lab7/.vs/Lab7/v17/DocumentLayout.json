@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|d:\\study\\subjects\\sem4\\techprog\\lab7\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|d:\\study\\subjects\\sem4\\techprog\\lab7\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|solutionrelative:filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|d:\\study\\subjects\\sem4\\techprog\\lab7\\graphicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\graphicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E34F15A4-5AED-4C98-9F5A-6356BFF66142}|Lab7.csproj|solutionrelative:graphicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -36,23 +36,10 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAowAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T10:06:35.611Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FileManager.cs",
-              "DocumentMoniker": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\FileManager.cs",
-              "RelativeDocumentMoniker": "FileManager.cs",
-              "ToolTip": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\FileManager.cs",
-              "RelativeToolTip": "FileManager.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T15:23:08.463Z",
               "EditorCaption": ""
             },
             {
@@ -65,6 +52,18 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileManager.cs",
+              "DocumentMoniker": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\FileManager.cs",
+              "RelativeDocumentMoniker": "FileManager.cs",
+              "ToolTip": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\FileManager.cs",
+              "RelativeToolTip": "FileManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T15:23:08.463Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "GraphicManager.cs",
               "DocumentMoniker": "D:\\Study\\Subjects\\Sem4\\TechProg\\Lab7\\GraphicManager.cs",
@@ -73,8 +72,7 @@
               "RelativeToolTip": "GraphicManager.cs",
               "ViewState": "AgIAAGkAAAAAAAAAAAAiwHUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T12:51:02.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T12:51:02.056Z"
             },
             {
               "$type": "Document",

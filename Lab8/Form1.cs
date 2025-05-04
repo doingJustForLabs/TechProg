@@ -2,104 +2,96 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Lab8
 {
     public partial class Form1: Form
     {
+        private DataProcessor processor = new DataProcessor();
+
         public Form1()
         {
             InitializeComponent();
-            LoadDataFromFile("text.txt");
-        }
-
-        public void LoadDataFromFile(string fileName)
-        {
-            sortComboBox.Items.Insert(0, "Не сортировать"); // Добавляем в начало
-            sortComboBox.SelectedIndex = 0; // Выбираем его
-            
-            try {
+            InitializeComboBoxes();
+            AutoScaleMode = AutoScaleMode.None;
+            try
+            {
                 string currentLabDir = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-                string filePath = Path.Combine(currentLabDir, fileName);
+                string filePath = Path.Combine(currentLabDir, "text.txt");
 
-                string[] lines = File.ReadAllLines(filePath);
-
-                DataTable table = new DataTable();
-
-                // Заполняем столбцы
-
-                string[] headers = lines[0].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-                for (int i = 0; i < headers.Length; i++)
-                {
-                    table.Columns.Add($"Column {i + 1}");
-                }
-
-                // Добавляем строки
-
-                for (int i = 0; i < lines.Length; i++)
-                {
-                    string[] parts = lines[i].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                    table.Rows.Add(parts);
-                }
-
-                dataGridView.DataSource = table;
+                processor.LoadDataFromFile(filePath);
+                dataGridView.DataSource = processor.Table;
                 dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-                chosenColumn.Maximum = headers.Length;
-
-            } catch (Exception  e)
+                chosenColumn.Maximum = processor.Table.Columns.Count;
+            }
+            catch (Exception e)
             {
                 MessageBox.Show(e.ToString(), "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void sortComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void InitializeComboBoxes()
         {
-            //string sortText = sortComboBox.Text;
-
-            //if (sortText == "Не сортировать")
-            //{
-            //    sortTypeComboBox.Enabled = false;
-            //} else { 
-            //    sortTypeComboBox.Enabled = true;
-            //}
+            sortComboBox.SelectedIndex = 0;
+            transformComboBox.SelectedIndex = 0;
+            sortTypeComboBox.SelectedIndex = 0;
         }
 
         private void chosenColumn_ValueChanged(object sender, EventArgs e)
         {
             int columnIndex = (int)chosenColumn.Value - 1;
+            dataGridView.ClearSelection();
+
+            foreach (DataGridViewRow row in dataGridView.Rows)
+                row.Cells[columnIndex].Selected = true;
+
+            bool isNum = processor.IsColumnNumeric(columnIndex);
+
+            if (!isNum)
+            {
+                sortTypeComboBox.SelectedItem = "\"как строки\"";
+                
+            } else
+            {
+                transformComboBox.SelectedItem = "Не преобразовывать";
+            }
+            sortTypeComboBox.Enabled = isNum;
+            transformComboBox.Enabled = !isNum;
+        }
+
+        private void runButton_Click(object sender, EventArgs e)
+        {
+            int columnIndex = (int)chosenColumn.Value - 1;
+            string sortOrder = sortComboBox.Text;
+            string sortType = sortTypeComboBox.Text;
+
+            if (sortOrder != "Не сортировать")
+            {
+                processor.Sort(columnIndex, sortOrder, sortType);
+            }
+
+            if (transformComboBox.Text != "Не преобразовывать")
+            {
+                processor.TransformText(columnIndex, transformComboBox.Text);
+            }
+
+            DataWindow dataWindow = new DataWindow(processor.Table);
+            dataWindow.Show();
 
             dataGridView.ClearSelection();
 
-            // Выделяем ячейки
             foreach (DataGridViewRow row in dataGridView.Rows)
-            {
                 row.Cells[columnIndex].Selected = true;
-            }
-
-            string firstColVal = dataGridView.Rows[0].Cells[columnIndex].Value.ToString();
-
-            bool isNum = double.TryParse(firstColVal, NumberStyles.Any, CultureInfo.InvariantCulture, out double result);
-
-            //MessageBox.Show(isNum ? $"Это число {result}" : $"Это не число {result}");
-
-            if (isNum)
-            {
-                sortTypeComboBox.Enabled = true;
-            } else
-            {
-                sortTypeComboBox.SelectedItem = "\"как строки\"";
-                sortTypeComboBox.Enabled = false;
-            }
         }
     }
 }
