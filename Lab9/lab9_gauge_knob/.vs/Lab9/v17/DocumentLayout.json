@@ -1,0 +1,180 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|d:\\study\\techprog\\lab9\\lab9_gauge_knob\\lab9_gauge_knob\\grapheditview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|solutionrelative:lab9_gauge_knob\\grapheditview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\graphcreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|solutionrelative:lab9_gauge_knob\\graphcreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\grapheditview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|solutionrelative:lab9_gauge_knob\\grapheditview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\grapheditview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|solutionrelative:lab9_gauge_knob\\grapheditview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\graphsviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|solutionrelative:lab9_gauge_knob\\graphsviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\graphsviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|solutionrelative:lab9_gauge_knob\\graphsviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\grapheditdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|solutionrelative:lab9_gauge_knob\\grapheditdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\graphcreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|solutionrelative:lab9_gauge_knob\\graphcreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\grapheditdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|solutionrelative:lab9_gauge_knob\\grapheditdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\dataviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DEB6DF30-0DB8-4E97-AAB8-EA2F8FDBA39C}|lab9_gauge_knob\\Lab9.csproj|solutionrelative:lab9_gauge_knob\\dataviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GraphEditView.cs",
+              "DocumentMoniker": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphEditView.cs",
+              "RelativeDocumentMoniker": "lab9_gauge_knob\\GraphEditView.cs",
+              "ToolTip": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphEditView.cs",
+              "RelativeToolTip": "lab9_gauge_knob\\GraphEditView.cs",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAkwBcBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T17:45:36.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DataViewer.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\DataViewer.cs",
+              "RelativeDocumentMoniker": "lab9_gauge_knob\\DataViewer.cs",
+              "ToolTip": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\DataViewer.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "lab9_gauge_knob\\DataViewer.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T21:09:01.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GraphCreation.cs",
+              "DocumentMoniker": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphCreation.cs",
+              "RelativeDocumentMoniker": "lab9_gauge_knob\\GraphCreation.cs",
+              "ToolTip": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphCreation.cs",
+              "RelativeToolTip": "lab9_gauge_knob\\GraphCreation.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAgwHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T21:07:21.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GraphCreation.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphCreation.cs",
+              "RelativeDocumentMoniker": "lab9_gauge_knob\\GraphCreation.cs",
+              "ToolTip": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphCreation.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "lab9_gauge_knob\\GraphCreation.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T21:07:04.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GraphsViewer.cs",
+              "DocumentMoniker": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphsViewer.cs",
+              "RelativeDocumentMoniker": "lab9_gauge_knob\\GraphsViewer.cs",
+              "ToolTip": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphsViewer.cs",
+              "RelativeToolTip": "lab9_gauge_knob\\GraphsViewer.cs",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAIwAIBAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T20:13:17.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GraphEditData.cs",
+              "DocumentMoniker": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphEditData.cs",
+              "RelativeDocumentMoniker": "lab9_gauge_knob\\GraphEditData.cs",
+              "ToolTip": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphEditData.cs",
+              "RelativeToolTip": "lab9_gauge_knob\\GraphEditData.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T20:12:24.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GraphEditData.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphEditData.cs",
+              "RelativeDocumentMoniker": "lab9_gauge_knob\\GraphEditData.cs",
+              "ToolTip": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphEditData.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "lab9_gauge_knob\\GraphEditData.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T20:12:07.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GraphsViewer.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphsViewer.cs",
+              "RelativeDocumentMoniker": "lab9_gauge_knob\\GraphsViewer.cs",
+              "ToolTip": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphsViewer.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "lab9_gauge_knob\\GraphsViewer.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T17:51:13.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GraphEditView.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphEditView.cs",
+              "RelativeDocumentMoniker": "lab9_gauge_knob\\GraphEditView.cs",
+              "ToolTip": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphEditView.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "lab9_gauge_knob\\GraphEditView.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T17:45:18.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GraphEditView.Designer.cs",
+              "DocumentMoniker": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphEditView.Designer.cs",
+              "RelativeDocumentMoniker": "lab9_gauge_knob\\GraphEditView.Designer.cs",
+              "ToolTip": "D:\\Study\\TechProg\\Lab9\\lab9_gauge_knob\\lab9_gauge_knob\\GraphEditView.Designer.cs",
+              "RelativeToolTip": "lab9_gauge_knob\\GraphEditView.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T16:10:50.194Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
