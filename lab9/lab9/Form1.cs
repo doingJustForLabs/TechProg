@@ -140,6 +140,7 @@ namespace lab9
         private void ChangeChartType(ZedGraphControl zedGraphControl)
         {
             // Меняем тип графика
+
             GraphPane pane = zedGraphControl.GraphPane;
 
             //if (pane.CurveList.Count > 0)
@@ -157,7 +158,7 @@ namespace lab9
                 else  // Линейная
                 {
                     curve.Line.IsVisible = true;
-                    curve.Symbol.Type = SymbolType.None;
+                    curve.Symbol.Type = SymbolType.Star;
                 }
             }
 
@@ -227,14 +228,14 @@ namespace lab9
                 }
             }
 
-            foreach (var curve in pane.CurveList)
-            {
-                if (curve is LineItem line)
-                {
-                    // Если тип линии не задан, ставим по дефолту Solid
-                    line.Line.Style = line.Line.Style == System.Drawing.Drawing2D.DashStyle.Solid ? line.Line.Style : System.Drawing.Drawing2D.DashStyle.Solid;
-                }
-            }
+            //foreach (var curve in pane.CurveList)
+            //{
+            //    if (curve is LineItem line)
+            //    {
+            //        // Если тип линии не задан, ставим по дефолту Solid
+            //        line.Line.Style = line.Line.Style == System.Drawing.Drawing2D.DashStyle.Solid ? line.Line.Style : System.Drawing.Drawing2D.DashStyle.Solid;
+            //    }
+            //}
 
             zedGraphControl.Invalidate();
         }

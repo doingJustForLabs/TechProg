@@ -1,4 +1,6 @@
 /lab2_console/
 /lab2_cpp/
-/.vs/
 .vs/
+*.7z
+Lab7_tech.sln
+*/.vs/

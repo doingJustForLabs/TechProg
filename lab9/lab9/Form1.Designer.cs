@@ -75,8 +75,8 @@
             this.comboBoxChartType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxChartType.FormattingEnabled = true;
             this.comboBoxChartType.Items.AddRange(new object[] {
-            "Линейная(ый)",
-            "Точечная(ый)"});
+            "Линейная",
+            "Точечная"});
             this.comboBoxChartType.Location = new System.Drawing.Point(251, 42);
             this.comboBoxChartType.Name = "comboBoxChartType";
             this.comboBoxChartType.Size = new System.Drawing.Size(159, 21);
